@@ -1,5 +1,6 @@
 import os
 import subprocess
+from datetime import datetime, timedelta
 
 class slurm_comms:
 
@@ -19,8 +20,11 @@ class slurm_comms:
             sacct_job_info = self._get_individual_job_information(job_id)
         
         split_job_information = sacct_job_info.split('\n')[2].split()
-
-        return int(split_job_information[2])
+	
+        if len(split_job_information) == 4:
+            return int(split_job_information[2])
+        else:
+            return 0 # quick fix for now, should add a bool arg which returns false if respone isnt valid (i.e. len() != 4).
 
     def _get_partition(self, job_id: str, sacct_information_present: bool = False, sacct_job_info: str = '') -> str:
 
@@ -97,7 +101,6 @@ class slurm_comms:
                                     
         return {'job_id' : job_id, 'number_of_cores' : number_of_cores, 'partition' : partition, 'account' : account, 'account_name' : account_name}
 
-
     def get_all_data_of_all_jobs(self) -> list:
 
         all_data = []
@@ -114,8 +117,51 @@ class slurm_comms:
     
         return all_data
 
+    def _convert_string_to_number_of_minutes(self, time_string: str) -> int:
+        '''
+        This function takes a string in the format of 'D-HH:MM:SS' or 'HH:MM:SS' and converts it to the total number of minutes.
+        The if stsatement checks if the string contains a '-' which indicates that the job has been running for more than 24 hours.
+        The if statements also deal with edge cases where the string isnt as anticipated. Could be more elegant.
+        '''
+
+        split_time = time_string.split(':')
+
+        if '-' in split_time[0]:
+            days = int(split_time[0].split('-')[0])
+            hours = int(split_time[0].split('-')[1])
+            minutes = int(split_time[1])
+            if split_time[2] == '+':
+                seconds = 0
+            else:
+                seconds = int(split_time[2])
+            return (days * 24 * 60) + (hours * 60) + minutes + (seconds /60)
+        else:
+            hours = int(split_time[0])
+            minutes = int(split_time[1])
+            seconds = int(split_time[2])
+            return (hours * 60) + minutes + (seconds /60)
+
+    def get_completed_job_information(self) -> str:
+        now = datetime.now()
+        time_24_hours_ago = now - timedelta(days=1)
+        formatted_time_24_hours_ago = time_24_hours_ago.strftime('%Y-%m-%dT%H:%M:%S')
+        return subprocess.run(['sacct', '--allusers', '--starttime', formatted_time_24_hours_ago, '--format=JobID,User,State,Elapsed,Timelimit,Partition'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+
+    def get_elapsed_time_of_jobs_over_last_24_hours(self) -> dict:
+        all_job_information = self.get_completed_job_information().split('\n')
+
+        run_times = []
+        requested_times = []
+
+        for lines in all_job_information:
+            split_data = lines.split()
+            if len(split_data) == 6 and split_data[2] == 'COMPLETED':
+                run_time = self._convert_string_to_number_of_minutes(split_data[3])
+                requested_time = self._convert_string_to_number_of_minutes(split_data[4])
+                run_times.append(run_time)
+                requested_times.append(requested_time)
+
+        return {'run_times' : run_times, 'requested_time' : requested_times}
 
 if __name__ == '__main__':
-    coms = slurm_comms()
-    total_cores_used = coms.get_total_number_of_cores_in_use()
-    print(f'Total cores used: {total_cores_used}, {100*(total_cores_used/15102):.2f}% of the HPC is currently being used.')
+    pass
