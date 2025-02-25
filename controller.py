@@ -16,8 +16,7 @@ if __name__ == '__main__':
     time_statistics = comms.get_elapsed_time_of_jobs_over_last_24_hours()
     run_time = time_statistics['run_times']
     requested_time = time_statistics['requested_time']
-    save_array_as_excel(run_time, 'run_time')
-    save_array_as_excel(requested_time, 'requested_time')
+    save_array_as_excel(time_statistics, 'time_statistics')
     average_run_time = np.average(run_time)
     average_requested_time = np.average(requested_time)
     print(f'Average requested time over last 24 hours: {convert_minuets_in_to_time_string(average_requested_time)}')
