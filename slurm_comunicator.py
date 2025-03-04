@@ -33,7 +33,11 @@ class slurm_comms:
         
         split_job_information = sacct_job_info.split('\n')[2].split()
 
-        return str(split_job_information[3])
+        if len(split_job_information) == 4:
+            return str(split_job_information[3])
+        else:
+            return ''
+
 
     def _get_account(self, job_id: str, sacct_information_present: bool = False, sacct_job_info: str = '') -> str:
 
@@ -42,7 +46,10 @@ class slurm_comms:
         
         split_job_information = sacct_job_info.split('\n')[2].split()
 
-        return str(split_job_information[1])
+        if len(split_job_information) == 4:
+            return str(split_job_information[2])
+        else:
+            return ''
 
     def _get_account_name(self, job_id: str, sacct_information_present: bool = False, sacct_job_info: str = '') -> str:
 
@@ -51,7 +58,10 @@ class slurm_comms:
         
         split_job_information = sacct_job_info.split('\n')[2].split()
 
-        return str(split_job_information[0])
+        if len(split_job_information) == 4:
+            return str(split_job_information[0])
+        else:
+            return ''
 
     def _get_individual_job_information(self, job_id: str) -> str:
         return subprocess.run(['sacct', '-j', job_id, '--format=User,Account,AllocCPUS,Partition'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
