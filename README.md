@@ -1,7 +1,7 @@
 # SLURM Communicator
 
 ## Overview
-SLURM Communicator is a tool designed to facilitate communication with the SLURM workload manager. It provides an easy-to-use interface for submitting, monitoring, and managing jobs on a SLURM cluster.
+SLURM Communicator is a tool designed to facilitate communication with the SLURM workload manager. It provides an easy-to-use interface for monitoring the use of the cluster.
 
 ## Features
 - Determine how many cores are currently in use.
@@ -12,19 +12,14 @@ To install SLURM Communicator, clone the repository and install the required dep
 ```bash
 git clone https://github.com/yourusername/slurm_communicator.git
 cd slurm_communicator
-pip install -r requirements.txt
+cd slurm_communicator
+pip3 install -r requirements.txt
 ```
 
 ## Usage
 To use SLURM Communicator, run the main script with the appropriate commands:
 ```bash
-python slurm_communicator.py [command] [options]
-```
-
-### Example
-Submit a job to the SLURM scheduler:
-```bash
-python slurm_communicator.py submit --script job_script.sh
+python3 main.py [command] [options]
 ```
 
 ## Contributing
