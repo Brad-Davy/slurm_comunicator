@@ -3,6 +3,11 @@ import subprocess
 from datetime import datetime, timedelta
 
 class slurm_comms:
+    '''
+    This class is used to communicate with the slurm scheduler on the HPC. It can be used to get information on the number 
+    of cores being used, the number of jobs in the queue, the number of jobs that have completed in the last 24 hours and 
+    the average run time of a job over the last 24 hours.
+    '''
 
     def __init__(self):
         self.all_jobs_information = subprocess.run(['squeue'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
@@ -12,9 +17,18 @@ class slurm_comms:
 
 
     def _get_current_job_information(self):
+        '''
+        This function is used to get the current job information from the slurm scheduler. It is called in the __init__ function.
+        '''
         self.all_jobs_information = subprocess.run(['squeue'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
     def _get_number_of_cores(self, job_id: str, sacct_information_present: bool = False, sacct_job_info: str = '') -> int:
+        '''
+        This function is used to get the number of cores that a job is using. It takes a job_id as an argument and returns 
+        the number of cores. The sacct_information_present argument is used to check if the information has already been 
+        retrieved, if it has then the function does not need to call the sacct command again. This is useful when calling 
+        this function multiple times in a loop.
+        '''
 
         if sacct_information_present == False:
             sacct_job_info = self._get_individual_job_information(job_id)
@@ -27,6 +41,12 @@ class slurm_comms:
             return 0 # quick fix for now, should add a bool arg which returns false if respone isnt valid (i.e. len() != 4).
 
     def _get_partition(self, job_id: str, sacct_information_present: bool = False, sacct_job_info: str = '') -> str:
+        '''
+        This function is used to get the partition that a job is running on. It takes a job_id as an argument and returns
+        the partition. The sacct_information_present argument is used to check if the information has already been
+        retrieved, if it has then the function does not need to call the sacct command again. This is useful when calling
+        this function multiple times in a loop.
+        '''
 
         if sacct_information_present == False:
             sacct_job_info = self._get_individual_job_information(job_id)
@@ -40,6 +60,12 @@ class slurm_comms:
 
 
     def _get_account(self, job_id: str, sacct_information_present: bool = False, sacct_job_info: str = '') -> str:
+        '''
+        This function is used to get the account that a job is running on. It takes a job_id as an argument and returns
+        the account. The sacct_information_present argument is used to check if the information has already been
+        retrieved, if it has then the function does not need to call the sacct command again. This is useful when calling
+        this function multiple times in a loop.
+        '''
 
         if sacct_information_present == False:
             sacct_job_info = self._get_individual_job_information(job_id)
@@ -52,6 +78,12 @@ class slurm_comms:
             return ''
 
     def _get_account_name(self, job_id: str, sacct_information_present: bool = False, sacct_job_info: str = '') -> str:
+        '''
+        This function is used to get the account name that a job is running on. It takes a job_id as an argument and returns
+        the account name. The sacct_information_present argument is used to check if the information has already been
+        retrieved, if it has then the function does not need to call the sacct command again. This is useful when calling
+        this function multiple times in a loop.
+        '''
 
         if sacct_information_present == False:
             sacct_job_info = self._get_individual_job_information(job_id)
@@ -64,9 +96,17 @@ class slurm_comms:
             return ''
 
     def _get_individual_job_information(self, job_id: str) -> str:
+        '''
+        This function is used to get the information of a single job. It takes a job_id as an argument and returns the
+        information of that job.
+        '''
         return subprocess.run(['sacct', '-j', job_id, '--format=User,Account,AllocCPUS,Partition'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
     def fill_job_ids_array(self):
+        '''
+        This function is used to fill the job_ids array with the job_ids of all the jobs in the queue. 
+        It is called in the __init__ function.
+        '''
 
         for lines in self.all_jobs_information.split('\n'):
             split_data = lines.split()
@@ -77,6 +117,9 @@ class slurm_comms:
                     pass
 
     def get_total_number_of_cores_in_use(self):
+        '''
+        This function is used to get the total number of cores being used on the HPC. It returns the total number of cores.
+        '''
 
         total_cores_in_use = 0
 
@@ -90,6 +133,10 @@ class slurm_comms:
         return total_cores_in_use
 
     def get_all_data_of_one_job(self, job_id :str) -> dict:
+        '''
+        This function is used to get all the information of a single job. It takes a job_id as an argument and returns a
+        dictionary containing the job_id, number_of_cores, partition, account and account_name.
+        '''
 
         sacct_job_info = self._get_individual_job_information(job_id)
 
@@ -112,6 +159,10 @@ class slurm_comms:
         return {'job_id' : job_id, 'number_of_cores' : number_of_cores, 'partition' : partition, 'account' : account, 'account_name' : account_name}
 
     def get_all_data_of_all_jobs(self) -> list:
+        '''
+        This function is used to get all the information of all the jobs in the queue. It returns a list of dictionaries
+        containing the job_id, number_of_cores, partition, account and account_name.
+        '''
 
         all_data = []
         idx = 0
@@ -152,12 +203,20 @@ class slurm_comms:
             return (hours * 60) + minutes + (seconds /60)
 
     def get_completed_job_information(self) -> str:
+        '''
+        This function is used to get the information of all the jobs that have completed in the last 24 hours. It returns a string
+        containing the information of the jobs.
+        '''
         now = datetime.now()
         time_24_hours_ago = now - timedelta(days=1)
         formatted_time_24_hours_ago = time_24_hours_ago.strftime('%Y-%m-%dT%H:%M:%S')
         return subprocess.run(['sacct', '--allusers', '--starttime', formatted_time_24_hours_ago, '--format=JobID,User,State,Elapsed,Timelimit,Partition'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
     def get_elapsed_time_of_jobs_over_last_24_hours(self) -> dict:
+        '''
+        This function is used to get the elapsed time of all the jobs that have completed in the last 24 hours. It returns a
+        dictionary containing the run_times and requested_times.
+        '''
         all_job_information = self.get_completed_job_information().split('\n')
 
         run_times = []
