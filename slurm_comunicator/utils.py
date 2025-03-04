@@ -1,4 +1,4 @@
-from slurm_comunicator import slurm_comms 
+from slurm_comunicator.slurm_comunicator import SlurmComms
 import pandas as pd
 from datetime import date
 

@@ -2,7 +2,7 @@ import os
 import subprocess
 from datetime import datetime, timedelta
 
-class slurm_comms:
+class SlurmComms:
     '''
     This class is used to communicate with the slurm scheduler on the HPC. It can be used to get information on the number 
     of cores being used, the number of jobs in the queue, the number of jobs that have completed in the last 24 hours and 
@@ -13,7 +13,7 @@ class slurm_comms:
         self.all_jobs_information = subprocess.run(['squeue'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
         self.job_ids = []
         self.job_data = []
-        self.fill_job_ids_array()
+        self.fill_job_ids_array() 
 
 
     def _get_current_job_information(self):
