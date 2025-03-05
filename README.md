@@ -2,6 +2,8 @@
 
 ## Overview
 SLURM Communicator is a tool designed to facilitate communication with the SLURM workload manager. It provides an easy-to-use interface for monitoring the use of the cluster.
+## Database Integration
+SLURM Communicator includes a SQL database to store and manage job information. This allows for efficient querying and analysis of job data over time. The database schema is designed to handle large volumes of data and provides a robust backend for the tool.
 
 ## Features
 - Determine how many cores are currently in use.
