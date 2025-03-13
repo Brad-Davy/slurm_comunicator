@@ -1,6 +1,6 @@
-import os
 import subprocess
 from datetime import datetime, timedelta
+from tqdm import tqdm
 
 class SlurmComms:
     '''
@@ -158,26 +158,6 @@ class SlurmComms:
                                     
         return {'job_id' : job_id, 'number_of_cores' : number_of_cores, 'partition' : partition, 'account' : account, 'account_name' : account_name}
 
-    def get_all_data_of_all_jobs(self) -> list:
-        '''
-        This function is used to get all the information of all the jobs in the queue. It returns a list of dictionaries
-        containing the job_id, number_of_cores, partition, account and account_name.
-        '''
-
-        all_data = []
-        idx = 0
-        if len(self.job_ids) == 0:
-            print('The length of the job_ids array is 0, make sure you have filled the array by calling get_job_ids().')
-            return 
-        else:
-            print(f'There are currently {len(self.job_ids)} in the queue.')
-            for job_id in self.job_ids:
-                print(f'Working on {idx}/{len(self.job_ids)}.')
-                idx += 1
-                all_data.append(self.get_all_data_of_one_job(job_id))
-    
-        return all_data
-
     def _convert_string_to_number_of_minutes(self, time_string: str) -> int:
         '''
         This function takes a string in the format of 'D-HH:MM:SS' or 'HH:MM:SS' and converts it to the total number of minutes.
@@ -231,6 +211,38 @@ class SlurmComms:
                 requested_times.append(requested_time)
 
         return {'run_times' : run_times, 'requested_time' : requested_times}
+    
+    def get_all_data_of_all_jobs(self) -> list:
+        '''
+        This function is used to get all the information of all the jobs in the queue. It returns a list of dictionaries
+        containing the job_id, number_of_cores, partition, account and account_name.
+        '''
+
+        all_data = []
+        idx = 0
+        if len(self.job_ids) == 0:
+            print('The length of the job_ids array is 0, make sure you have filled the array by calling get_job_ids().')
+            return 
+        else:
+            print(f'There are currently {len(self.job_ids)} jobs in the queue.')
+            for job_id in tqdm(self.job_ids):
+                idx += 1
+                all_data.append(self.get_all_data_of_one_job(job_id))
+    
+        return all_data
+    
+    def get_all_partition_data(self):
+
+        job_partitions = {}
+
+        for job_id in self.job_ids:
+            parition = self._get_partition(job_id)
+            if parition in job_partitions:
+                job_partitions[parition].append(job_id)
+            else:
+                job_partitions[parition] = [job_id]
+
+        return job_partitions
 
 if __name__ == '__main__':
     pass
