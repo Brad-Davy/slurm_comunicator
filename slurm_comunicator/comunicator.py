@@ -224,7 +224,8 @@ class SlurmComms:
             print('The length of the job_ids array is 0, make sure you have filled the array by calling get_job_ids().')
             return 
         else:
-            print(f'There are currently {len(self.job_ids)} jobs in the queue.')
+            print(f'There are currently {len(self.job_ids)} jobs in the queue. Checking each job now.')
+            print('\n')
             for job_id in tqdm(self.job_ids):
                 idx += 1
                 all_data.append(self.get_all_data_of_one_job(job_id))

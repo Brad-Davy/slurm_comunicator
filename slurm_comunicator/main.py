@@ -8,23 +8,25 @@ def add(x,y):
     return x+y
 
 
+def print_new_section(title: str, terminal_width) -> None:
+    print('\n')
+    print('#'*(terminal_width//2))
+    print(title)
+    print('#'*(terminal_width//2))
+    print('\n')
+
+
 if __name__ == '__main__':
 
     terminal_width = shutil.get_terminal_size().columns
     terminal_height = shutil.get_terminal_size().lines
 
-    print('#'*(terminal_width//2))
-    for i in range(terminal_height//4):
-        if i == (terminal_height//4):
-            print('#' + ' '*((terminal_width//5)-2) + 'Slurm Comunicator' + ' '*((terminal_width//5)-2) + '#')
-        print('#' + ' '*((terminal_width//2)-2) + '#')
-    print('#'*(terminal_width//2))
-    print('\n')
+    print_new_section('Slurm Comunicator', terminal_width)
 
     comms = SlurmComms()
 
     number_of_cores_check = True
-    average_length_of_job_check = False
+    average_length_of_job_check = True
     check_partition_useage = True
 
     if number_of_cores_check == True:
@@ -34,6 +36,7 @@ if __name__ == '__main__':
 
     if average_length_of_job_check == True:
         ## Determine the average length of time of a job ##
+        print_new_section('Average Job Length - last 24 hours', terminal_width)
         time_statistics = comms.get_elapsed_time_of_jobs_over_last_24_hours()
         run_time = time_statistics['run_times']
         requested_time = time_statistics['requested_time']
@@ -45,11 +48,7 @@ if __name__ == '__main__':
 
     if check_partition_useage == True:
         ## Determine the amounts of jobs currently running in each parition ##
-        print('\n')
-        print('#'*(terminal_width//2))
-        print('Partition Data')
-        print('#'*(terminal_width//2))
-        print('\n')
+        print_new_section('Partition Useage', terminal_width)
         all_job_data = comms.get_all_data_of_all_jobs()
         number_of_cores_per_partition = {}
 
