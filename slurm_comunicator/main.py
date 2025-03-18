@@ -28,9 +28,9 @@ if __name__ == '__main__':
 
     comms = SlurmComms()
 
-    number_of_cores_check = False
-    average_length_of_job_check = False
-    check_partition_useage = False
+    number_of_cores_check = True
+    average_length_of_job_check = True
+    check_partition_useage = True
     print_csv_file_check = True
     append_to_csv_check = True
 
