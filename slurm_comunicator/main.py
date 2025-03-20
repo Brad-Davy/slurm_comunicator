@@ -20,7 +20,7 @@ def print_new_section(title: str, terminal_width) -> None:
 if __name__ == '__main__':
     '''
         I should probably abstract some of this code into functions,
-        it had ended up much longer than I had anticipated.
+        it has ended up much longer than I had anticipated.
     '''
 
     terminal_width = shutil.get_terminal_size().columns
@@ -125,4 +125,3 @@ if __name__ == '__main__':
 
     if print_csv_file_check == True:
         print_csv_file(file_names=['quantities_of_interest.csv', 'previous_24_hours_quantities_of_interest.csv'])
-

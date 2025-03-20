@@ -270,12 +270,4 @@ class SlurmComms:
         return job_partitions
 
 if __name__ == '__main__':
-    comms = SlurmComms()
-    partition = 'large-long'
-    number_of_jobs = len(comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()[partition][0])
-    number_of_cores = sum(comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()[partition][2])
-    total_time = sum(comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()[partition][0])
-    print(f'Number of jobs in {partition}: {number_of_jobs}')
-    print(f'Number of cores used in {partition}: {number_of_cores}')
-    print(f'Total time of jobs in {partition}: {total_time}')
-    print(f'Average time of jobs in {partition}: {total_time / number_of_jobs}')
+    pass
