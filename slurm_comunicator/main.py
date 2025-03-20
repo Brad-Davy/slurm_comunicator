@@ -18,19 +18,37 @@ def print_new_section(title: str, terminal_width) -> None:
 
 
 if __name__ == '__main__':
+    '''
+        I should probably abstract some of this code into functions,
+        it had ended up much longer than I had anticipated.
+    '''
 
     terminal_width = shutil.get_terminal_size().columns
     terminal_height = shutil.get_terminal_size().lines
-    quantities_of_interest = {'date': date.today(), 'number_of_cores' : 0, 'average_length_of_job' : 0, 'jobs_in_the_queue' : 0,
-                              '' : 0, 'large-long' : 0, 'large-sho+' : 0, 'small-long' : 0, 'interacti+' : 0}
+    quantities_of_interest = {'date': date.today(), 'number_of_cores' : 0, 'average_length_of_job' : 0, 
+                              'jobs_in_the_queue' : 0, '' : 0, 'large-long' : 0, 'large-sho+' : 0, 
+                              'small-long' : 0, 'interacti+' : 0, 'large-long-number-of-cores' : 0, 
+                              'large-sho+-number-of-cores' : 0, 'small-long-number-of-cores' : 0, 
+                              'interacti+-number-of-cores' : 0}
+
+    previous_24_hours_quantities_of_interest = {'date': date.today(), 'large-long-jobs-completed' : 0, 'large-sho+-jobs-completed' : 0, 
+                            'small-long-jobs-completed' : 0, 'interacti+-jobs-completed' : 0, 'large-long-number-of-cores' : 0, 
+                            'large-sho+-number-of-cores' : 0, 'small-long-number-of-cores' : 0, 
+                            'interacti+-number-of-cores' : 0, 'large-long-avg-time' : 0, 'large-sho+-avg-time' : 0,
+                            'small-long-avg-time' : 0, 'interacti+-avg-time' : 0}
+    
+    partitions = ['large-long', 'large-sho+', 'small-long', 'interacti+', 'debug', 'small-sho+']
 
     print_new_section('Slurm Comunicator', terminal_width)
 
     comms = SlurmComms()
 
+    ## Probably should make these into command line arguments ##
     number_of_cores_check = False
     average_length_of_job_check = False
     check_partition_useage = False
+    create_csv_file_check = False
+    fill_last_24_hours_check = True
     print_csv_file_check = True
     append_to_csv_check = True
 
@@ -79,13 +97,32 @@ if __name__ == '__main__':
                     number_of_running_jobs += 1
                     total_cores_used += cores
             quantities_of_interest[partition] = number_of_running_jobs
+            quantities_of_interest[f'{partition}-number-of-cores'] = total_cores_used
             print(f'''Partition: {partition if partition != '' else 'Queue'}, {number_of_running_jobs}
                    jobs currently running, {sum(number_of_cores_per_partition[partition])} cores in use.
                    Average number of cores per job: {total_cores_used / number_of_running_jobs if number_of_running_jobs != 0 else 0:.0f}.''')
         print('\n')
 
+    if fill_last_24_hours_check == True:
+        
+        ## Get statistics on the number of jobs completed in the last 24 hours ##
+        print_new_section('Jobs Completed in the Last 24 Hours', terminal_width)
+        for partition in partitions:
+            number_of_jobs = len(comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()[partition][0])
+            number_of_cores = sum(comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()[partition][2])
+            total_time = sum(comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()[partition][0])
+            previous_24_hours_quantities_of_interest[f'{partition}-jobs-completed'] = number_of_jobs
+            previous_24_hours_quantities_of_interest[f'{partition}-number-of-cores'] = number_of_cores
+            previous_24_hours_quantities_of_interest[f'{partition}-avg-time'] = total_time / number_of_jobs if number_of_jobs != 0 else 0
+
+    if create_csv_file_check == True:
+        create_csv_file(quantities_of_interest, file_name='quantities_of_interest.csv')
+        create_csv_file(previous_24_hours_quantities_of_interest, file_name='previous_24_hours_quantities_of_interest.csv')   
+
     if append_to_csv_check == True:
-        append_to_csv(quantities_of_interest)
+        append_csv_file(quantities_of_interest, file_name='quantities_of_interest.csv')
+        append_csv_file(previous_24_hours_quantities_of_interest, file_name='previous_24_hours_quantities_of_interest.csv')  
 
     if print_csv_file_check == True:
-        print_csv_file()
+        print_csv_file(file_names=['quantities_of_interest.csv', 'previous_24_hours_quantities_of_interest.csv'])
+

@@ -190,7 +190,8 @@ class SlurmComms:
         now = datetime.now()
         time_24_hours_ago = now - timedelta(days=1)
         formatted_time_24_hours_ago = time_24_hours_ago.strftime('%Y-%m-%dT%H:%M:%S')
-        return subprocess.run(['sacct', '--allusers', '--starttime', formatted_time_24_hours_ago, '--format=JobID,User,State,Elapsed,Timelimit,Partition'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+        return subprocess.run(['sacct', '--allusers', '--starttime', formatted_time_24_hours_ago, '--format=JobID,User,State,Elapsed,Timelimit,Partition,AllocCPUS'],
+                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
     def get_elapsed_time_of_jobs_over_last_24_hours(self) -> dict:
         '''
@@ -211,6 +212,29 @@ class SlurmComms:
                 requested_times.append(requested_time)
 
         return {'run_times' : run_times, 'requested_time' : requested_times}
+    
+    def elapsed_time_of_jobs_over_last_24_hours_per_partition(self) -> dict:
+
+        all_job_information = self.get_completed_job_information().split('\n')
+        partitions = {'large-long' : [[],[],[]], 'large-sho+' : [[],[],[]], 'small-long' : [[],[],[]], 'interacti+' : [[],[],[]],
+                       'debug' : [[],[],[]], 'gpu' : [[],[],[]], 'small-sho+' : [[],[],[]]} 
+
+        for lines in all_job_information:
+            split_data = lines.split()
+
+            if len(split_data) == 7 and split_data[2] == 'COMPLETED':
+
+                partition = split_data[5]
+                run_time = self._convert_string_to_number_of_minutes(split_data[3])
+                requested_time = self._convert_string_to_number_of_minutes(split_data[4])
+                allocated_cpus = int(split_data[6])
+
+                if run_time > 5: # This removes job which start and fail fast, which can skew the average run time.
+                    partitions[partition][0].append(run_time)
+                    partitions[partition][1].append(requested_time)
+                    partitions[partition][2].append(allocated_cpus)
+
+        return partitions
     
     def get_all_data_of_all_jobs(self) -> list:
         '''
@@ -246,4 +270,12 @@ class SlurmComms:
         return job_partitions
 
 if __name__ == '__main__':
-    pass
+    comms = SlurmComms()
+    partition = 'large-long'
+    number_of_jobs = len(comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()[partition][0])
+    number_of_cores = sum(comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()[partition][2])
+    total_time = sum(comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()[partition][0])
+    print(f'Number of jobs in {partition}: {number_of_jobs}')
+    print(f'Number of cores used in {partition}: {number_of_cores}')
+    print(f'Total time of jobs in {partition}: {total_time}')
+    print(f'Average time of jobs in {partition}: {total_time / number_of_jobs}')
