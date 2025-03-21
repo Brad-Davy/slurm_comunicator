@@ -217,7 +217,7 @@ class SlurmComms:
 
         all_job_information = self.get_completed_job_information().split('\n')
         partitions = {'large-long' : [[],[],[]], 'large-sho+' : [[],[],[]], 'small-long' : [[],[],[]], 'interacti+' : [[],[],[]],
-                       'debug' : [[],[],[]], 'gpu' : [[],[],[]], 'small-sho+' : [[],[],[]]} 
+                       'debug' : [[],[],[]], 'gpu' : [[],[],[]], 'small-sho+' : [[],[],[]], 'bigmem' : [[],[],[]], 'vbigmem' : [[],[],[]]}
 
         for lines in all_job_information:
             split_data = lines.split()

@@ -5,10 +5,6 @@ import numpy as np
 import shutil
 from datetime import date
 
-def add(x,y):
-    return x+y
-
-
 def print_new_section(title: str, terminal_width) -> None:
     print('\n')
     print('#'*(terminal_width//2))
@@ -37,16 +33,16 @@ if __name__ == '__main__':
                             'interacti+-number-of-cores' : 0, 'large-long-avg-time' : 0, 'large-sho+-avg-time' : 0,
                             'small-long-avg-time' : 0, 'interacti+-avg-time' : 0}
     
-    partitions = ['large-long', 'large-sho+', 'small-long', 'interacti+', 'debug', 'small-sho+']
+    partitions = ['large-long', 'large-sho+', 'small-long', 'interacti+', 'debug', 'small-sho+', 'bigmem', 'vbigmem']
 
     print_new_section('Slurm Comunicator', terminal_width)
 
     comms = SlurmComms()
 
     ## Probably should make these into command line arguments ##
-    number_of_cores_check = False
-    average_length_of_job_check = False
-    check_partition_useage = False
+    number_of_cores_check = True
+    average_length_of_job_check = True
+    check_partition_useage = True
     create_csv_file_check = False
     fill_last_24_hours_check = True
     print_csv_file_check = True
