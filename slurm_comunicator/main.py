@@ -47,6 +47,7 @@ if __name__ == '__main__':
     fill_last_24_hours_check = True
     print_csv_file_check = True
     append_to_csv_check = True
+    large_long_jobs_check = True
 
     if number_of_cores_check == True:
         ## Get statistics on the number of cores being used ##
