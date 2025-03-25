@@ -1,6 +1,9 @@
 from slurm_comunicator.comunicator import SlurmComms
+from slurm_comunicator.utils import *
 import subprocess
 
+
+## Tests SlurmComms class ##
 def test_elapsed_time_of_jobs_over_last_24_hours_per_partition():
     comms = SlurmComms()
     time_statistics = comms.elapsed_time_of_jobs_over_last_24_hours_per_partition()
@@ -28,7 +31,7 @@ def test_number_of_large_long_jobs():
 
     comms = SlurmComms()
     raw_data = subprocess.run(['squeue', '-p', 'large-long', '-t', 'R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
-    number_of_jobs = len(raw_data.split('\n')) - 1
+    number_of_jobs = len(raw_data.split('\n')) - 2
 
     all_job_data = comms.get_all_data_of_all_jobs()
     number_of_cores_per_partition = {}
@@ -43,3 +46,8 @@ def test_number_of_large_long_jobs():
             number_of_cores_per_partition[partition].append(number_of_cores)
 
     assert number_of_jobs == len([cores for cores in number_of_cores_per_partition['large-long'] if cores != 0])
+
+## Test utils funcitons ##
+def test_convert_time_to_float():
+
+    pass

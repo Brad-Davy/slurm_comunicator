@@ -32,7 +32,7 @@ if __name__ == '__main__':
                             'large-sho+-number-of-cores' : 0, 'small-long-number-of-cores' : 0, 
                             'interacti+-number-of-cores' : 0, 'large-long-avg-time' : 0, 'large-sho+-avg-time' : 0,
                             'small-long-avg-time' : 0, 'interacti+-avg-time' : 0}
-    
+
     partitions = ['large-long', 'large-sho+', 'small-long', 'interacti+', 'debug', 'small-sho+', 'bigmem', 'vbigmem']
 
     print_new_section('Slurm Comunicator', terminal_width)
@@ -69,6 +69,7 @@ if __name__ == '__main__':
         quantities_of_interest['average_length_of_job'] = average_run_time
 
     if check_partition_useage == True:
+
         ## Determine the amounts of jobs currently running in each parition ##
         print_new_section('Partition Useage', terminal_width)
         all_job_data = comms.get_all_data_of_all_jobs()
@@ -111,6 +112,10 @@ if __name__ == '__main__':
             previous_24_hours_quantities_of_interest[f'{partition}-jobs-completed'] = number_of_jobs
             previous_24_hours_quantities_of_interest[f'{partition}-number-of-cores'] = number_of_cores
             previous_24_hours_quantities_of_interest[f'{partition}-avg-time'] = total_time / number_of_jobs if number_of_jobs != 0 else 0
+
+    if large_long_jobs_check == True:
+        large_long_time_dict = comms.get_elapsed_time_of_jobs_over_last_24_hours(partition='large-long')
+        save_array_as_excel(large_long_time_dict, file_name = 'time_stats_large_long')
 
     if create_csv_file_check == True:
         create_csv_file(quantities_of_interest, file_name='quantities_of_interest.csv')

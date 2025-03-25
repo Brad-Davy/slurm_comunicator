@@ -194,6 +194,33 @@ class SlurmComms:
         return subprocess.run(['sacct', '--allusers', '--starttime', formatted_time_24_hours_ago, '--format=JobID,User,State,Elapsed,Timelimit,Partition,AllocCPUS'],
                                  stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
+
+    def _is_completed_data_line_valid(self, line_data: list, partition: str) -> bool:
+
+        if partition != '':
+
+            if len(line_data) != 7:
+                return False
+
+            if line_data[2] != 'COMPLETED' and line_data[2] != 'CANCELLED+' and line_data[2] != 'TIMEOUT' and line_data[2] != 'FAILED':
+                print(line_data[2])
+                return False
+
+            if line_data[5] != partition:
+                return False
+
+            return True
+
+        else:
+            if len(line_data) != 7:
+                return False
+
+            if line_data[2] != 'COMPLETED' and line_data[2] != 'CANCELLED+':
+                return False
+
+            return True
+
+
     def get_elapsed_time_of_jobs_over_last_24_hours(self, partition: str = '') -> dict:
         '''
         This function is used to get the elapsed time of all the jobs that have completed in the last 24 hours. It returns a
@@ -202,11 +229,12 @@ class SlurmComms:
         all_job_information = self.get_completed_job_information().split('\n')
         run_times = []
         requested_times = []
+
         if partition != '':
             for lines in all_job_information:
                 split_data = lines.split()
-                if len(split_data) == 7 and split_data[2] == 'COMPLETED' and split_data[5] == partition:
-                    
+                if self._is_completed_data_line_valid(split_data, partition):
+
                     run_time = self._convert_string_to_number_of_minutes(split_data[3])
                     requested_time = self._convert_string_to_number_of_minutes(split_data[4])
                     run_times.append(run_time)
@@ -214,7 +242,7 @@ class SlurmComms:
         else:
             for lines in all_job_information:
                 split_data = lines.split()
-                if len(split_data) == 6 and split_data[2] == 'COMPLETED':
+                if self._is_completed_data_line_valid(split_data, partition):
                     run_time = self._convert_string_to_number_of_minutes(split_data[3])
                     requested_time = self._convert_string_to_number_of_minutes(split_data[4])
                     run_times.append(run_time)
