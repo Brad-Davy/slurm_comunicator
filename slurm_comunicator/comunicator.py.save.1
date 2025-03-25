@@ -14,7 +14,7 @@ class SlurmComms:
         self.all_jobs_information = subprocess.run(['squeue'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
         self.job_ids = []
         self.job_data = []
-        self.fill_job_ids_array()
+        self.fill_job_ids_array() 
 
 
     def _get_current_job_information(self):
@@ -36,7 +36,7 @@ class SlurmComms:
 
         split_job_information = sacct_job_info.split('\n')[2].split()
 
-        if len(split_job_information) == 5:
+        if len(split_job_information) == 4:
             return int(split_job_information[2])
         else:
             return 0 # quick fix for now, should add a bool arg which returns false if respone isnt valid (i.e. len() != 4).
@@ -54,28 +54,11 @@ class SlurmComms:
 
         split_job_information = sacct_job_info.split('\n')[2].split()
 
-        if len(split_job_information) == 5:
+        if len(split_job_information) == 4:
             return str(split_job_information[3])
         else:
             return ''
 
-    def _get_state(self, job_id: str, sacct_information_present: bool = False, sacct_job_info: str = '') -> str:
-        '''
-        This function is used to get the partition that a job is running on. It takes a job_id as an argument and returns
-        the partition. The sacct_information_present argument is used to check if the information has already been
-        retrieved, if it has then the function does not need to call the sacct command again. This is useful when calling
-        this function multiple times in a loop.
-        '''
-
-        if sacct_information_present == False:
-            sacct_job_info = self._get_individual_job_information(job_id)
-
-        split_job_information = sacct_job_info.split('\n')[2].split()
-
-        if len(split_job_information) == 5:
-            return str(split_job_information[-1])
-        else:
-            return ''
 
     def _get_account(self, job_id: str, sacct_information_present: bool = False, sacct_job_info: str = '') -> str:
         '''
@@ -87,10 +70,10 @@ class SlurmComms:
 
         if sacct_information_present == False:
             sacct_job_info = self._get_individual_job_information(job_id)
-
+        
         split_job_information = sacct_job_info.split('\n')[2].split()
 
-        if len(split_job_information) == 5:
+        if len(split_job_information) == 4:
             return str(split_job_information[2])
         else:
             return ''
@@ -108,7 +91,7 @@ class SlurmComms:
         
         split_job_information = sacct_job_info.split('\n')[2].split()
 
-        if len(split_job_information) == 5:
+        if len(split_job_information) == 4:
             return str(split_job_information[0])
         else:
             return ''
@@ -118,7 +101,7 @@ class SlurmComms:
         This function is used to get the information of a single job. It takes a job_id as an argument and returns the
         information of that job.
         '''
-        return subprocess.run(['sacct', '-j', job_id, '--format=User,Account,AllocCPUS,Partition,State'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+        return subprocess.run(['sacct', '-j', job_id, '--format=User,Account,AllocCPUS,Partition'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
     def fill_job_ids_array(self):
         '''
@@ -208,6 +191,8 @@ class SlurmComms:
         now = datetime.now()
         time_24_hours_ago = now - timedelta(days=1)
         formatted_time_24_hours_ago = time_24_hours_ago.strftime('%Y-%m-%dT%H:%M:%S')
+        print(subprocess.run(['sacct', '--allusers', '--starttime', formatted_time_24_hours_ago, '--format=JobID,User,State,Elapsed,Timelimit,Partition,AllocCPUS'],
+              stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout)
         return subprocess.run(['sacct', '--allusers', '--starttime', formatted_time_24_hours_ago, '--format=JobID,User,State,Elapsed,Timelimit,Partition,AllocCPUS'],
                                  stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
@@ -266,7 +251,7 @@ class SlurmComms:
                     requested_times.append(requested_time)
 
         return {'run_times' : run_times, 'requested_time' : requested_times}
-    
+
     def elapsed_time_of_jobs_over_last_24_hours_per_partition(self) -> dict:
 
         all_job_information = self.get_completed_job_information().split('\n')

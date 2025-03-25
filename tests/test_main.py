@@ -29,23 +29,18 @@ def test_get_all_data_of_all_jobs():
 
 def test_number_of_large_long_jobs():
 
-    comms = SlurmComms()
-    raw_data = subprocess.run(['squeue', '-p', 'large-long', '-t', 'R'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+    raw_data = subprocess.run(['squeue', '-p', 'large-long', '-t', 'R','--format=AllocCPU'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
     number_of_jobs = len(raw_data.split('\n')) - 2
 
-    all_job_data = comms.get_all_data_of_all_jobs()
-    number_of_cores_per_partition = {}
+    comms = SlurmComms()
+    all_large_long_jobs = comms.get_all_partition_data()['large-long']
+    number_of_jobs_from_slurm_comms = 0
 
-    for job in all_job_data:
-        partition = job['partition']
-        number_of_cores = job['number_of_cores']
+    for jobs in all_large_long_jobs:
+        if comms._get_state(jobs) == 'RUNNING':
+            number_of_jobs_from_slurm_comms += 1
 
-        if partition not in number_of_cores_per_partition.keys():
-            number_of_cores_per_partition[partition] = [number_of_cores]
-        else:
-            number_of_cores_per_partition[partition].append(number_of_cores)
-
-    assert number_of_jobs == len([cores for cores in number_of_cores_per_partition['large-long'] if cores != 0])
+    assert number_of_jobs == number_of_jobs_from_slurm_comms
 
 ## Test utils funcitons ##
 def test_convert_time_to_float():
