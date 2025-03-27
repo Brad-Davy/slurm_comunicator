@@ -37,7 +37,9 @@ def test_number_of_large_long_jobs():
     number_of_jobs_from_slurm_comms = 0
 
     for jobs in all_large_long_jobs:
-        if comms._get_state(jobs) == 'RUNNING':
+        state = comms._get_state(jobs)
+
+        if state == 'RUNNING':
             number_of_jobs_from_slurm_comms += 1
 
     assert number_of_jobs == number_of_jobs_from_slurm_comms

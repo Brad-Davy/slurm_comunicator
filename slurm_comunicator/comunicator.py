@@ -120,6 +120,26 @@ class SlurmComms:
         '''
         return subprocess.run(['sacct', '-j', job_id, '--format=User,Account,AllocCPUS,Partition,State'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
+    def line_data_is_okay(self, line_data):
+
+        split_line_data = line_data.split()
+
+        if len(split_line_data) == 9:
+            return True, split_line_data[0]
+
+        if len(split_line_data) != 8:
+            return False, ''
+
+        if '_' in split_line_data[0]:
+            return False, ''
+
+        if split_line_data[0] == 'JOBID':
+            return False, ''
+
+        return True, split_line_data[0]
+
+
+
     def fill_job_ids_array(self):
         '''
         This function is used to fill the job_ids array with the job_ids of all the jobs in the queue. 
@@ -127,12 +147,10 @@ class SlurmComms:
         '''
 
         for lines in self.all_jobs_information.split('\n'):
-            split_data = lines.split()
-            if len(split_data) == 8:
-                try:
-                    self.job_ids.append(str(int(split_data[0]))) # clunky but checks if the job_id can be cast to int, but needs to be string after.
-                except:                                          # Should be replaced with something better when refactoring.
-                    pass
+
+            add_data, job = self.line_data_is_okay(lines)
+            if add_data:
+                self.job_ids.append(job)
 
     def get_total_number_of_cores_in_use(self):
         '''
@@ -220,7 +238,6 @@ class SlurmComms:
                 return False
 
             if line_data[2] != 'COMPLETED' and line_data[2] != 'CANCELLED+' and line_data[2] != 'TIMEOUT' and line_data[2] != 'FAILED':
-                print(line_data[2])
                 return False
 
             if line_data[5] != partition:
@@ -313,7 +330,7 @@ class SlurmComms:
     def get_all_partition_data(self):
 
         job_partitions = {}
-
+        print('1032774' in self.job_ids)
         for job_id in self.job_ids:
             parition = self._get_partition(job_id)
             if parition in job_partitions:
