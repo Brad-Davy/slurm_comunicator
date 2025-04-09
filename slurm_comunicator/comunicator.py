@@ -213,10 +213,13 @@ class SlurmComms:
                 seconds = int(split_time[2])
             return (days * 24 * 60) + (hours * 60) + minutes + (seconds /60)
         else:
-            hours = int(split_time[0])
-            minutes = int(split_time[1])
-            seconds = int(split_time[2])
-            return (hours * 60) + minutes + (seconds /60)
+            try:
+                hours = int(split_time[0])
+                minutes = int(split_time[1])
+                seconds = int(split_time[2])
+                return (hours * 60) + minutes + (seconds /60)
+            except:
+                return 0
 
     def get_completed_job_information(self) -> str:
         '''
@@ -231,7 +234,6 @@ class SlurmComms:
 
 
     def _is_completed_data_line_valid(self, line_data: list, partition: str) -> bool:
-
         if partition != '':
 
             if len(line_data) != 7:
@@ -268,11 +270,13 @@ class SlurmComms:
             for lines in all_job_information:
                 split_data = lines.split()
                 if self._is_completed_data_line_valid(split_data, partition):
-
-                    run_time = self._convert_string_to_number_of_minutes(split_data[3])
-                    requested_time = self._convert_string_to_number_of_minutes(split_data[4])
-                    run_times.append(run_time)
-                    requested_times.append(requested_time)
+                    try:
+                        run_time = self._convert_string_to_number_of_minutes(split_data[3])
+                        requested_time = self._convert_string_to_number_of_minutes(split_data[4])
+                        run_times.append(run_time)
+                        requested_times.append(requested_time)
+                    except:
+                       pass
         else:
             for lines in all_job_information:
                 split_data = lines.split()
@@ -330,7 +334,6 @@ class SlurmComms:
     def get_all_partition_data(self):
 
         job_partitions = {}
-        print('1032774' in self.job_ids)
         for job_id in self.job_ids:
             parition = self._get_partition(job_id)
             if parition in job_partitions:
