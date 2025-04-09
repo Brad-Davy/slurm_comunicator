@@ -41,13 +41,25 @@ class SlurmComms:
 
     def get_n_cores_partition_dictionary(self) -> dict:
         '''
-        This function is used to get the number of cores in each partition. It returns a dictionary containing the partition name
+        This function is used to get the number of cores in each partition. 
+        It returns a dictionary containing the partition name
         and the number of cores.
         '''
         partition_dictionary = {}
         for partition in self.partitions:
             partition = Partition(partition)
             partition_dictionary[partition.name] = partition.number_of_cores
+        return partition_dictionary
+
+    def get_n_jobs_partition_dictionary(self) -> dict:
+        '''
+        This function is used to get the number of jobs in each partition. 
+        It returns a dictionary containing the partition name
+        '''
+        partition_dictionary = {}
+        for partition in self.partitions:
+            partition = Partition(partition)
+            partition_dictionary[partition.name] = partition.number_of_jobs
         return partition_dictionary
 
 if __name__ == '__main__':

@@ -9,8 +9,8 @@ class Partition:
             ['squeue', '-p', self.name, '--state', 'r','--format=%i,%C']
         , stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
         self.node_list = self.dertemine_node_list()
-        self.avg_job_length = self.determine_avg_job_length()
         self.number_of_cores = self.determine_n_of_cores()
+        self.number_of_jobs = self.determine_n_of_jobs()
        
     def dertemine_node_list(self):
         """
@@ -36,11 +36,17 @@ class Partition:
                 number_of_cores += int(cores)
         return number_of_cores
 
-    def determine_avg_job_length(self):
+    def determine_n_of_jobs(self):
         """
-        Get the average job length in the partition.
+        Get the number of cores in the partition.
         """
-        pass
+        number_of_jobs = 0
+        for lines in self.all_jobs_information.splitlines():
+            if 'JOBID' in lines:
+                pass
+            else:
+                number_of_jobs += 1
+        return number_of_jobs
 
 
 if __name__ == '__main__':
