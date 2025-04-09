@@ -4,13 +4,13 @@ from slurm_comunicator.node import Node
 class Partition:
     def __init__(self, name: str):
         self.name = name
-        self.number_of_cores = self.determine_n_of_cores()
         self.job_ids = []
         self.all_jobs_information = subprocess.run(
             ['squeue', '-p', self.name, '--state', 'r','--format=%i,%C']
         , stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
         self.node_list = self.dertemine_node_list()
         self.avg_job_length = self.determine_avg_job_length()
+        self.number_of_cores = self.determine_n_of_cores()
        
     def dertemine_node_list(self):
         """
@@ -44,11 +44,4 @@ class Partition:
 
 
 if __name__ == '__main__':
-    partition = Partition("large-long")
-    partition.determine_n_of_cores()
-    print(f'Number of cores according to partition:{partition.number_of_cores}')
-    number_of_cores = 0
-    for lines in partition.node_list:
-        node = Node(lines)
-        number_of_cores += node.n_cores
-    print(f'Number of cores according to nodes:{number_of_cores}')
+    pass

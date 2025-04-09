@@ -42,6 +42,32 @@ def convert_minuets_in_to_time_string(minutes: int) -> str:
     except:
         print(minutes)
         return '0:0'
-        
+
+def convert_string_to_number_of_minutes(time_string: str) -> int:
+    '''
+    This function takes a string in the format of 'D-HH:MM:SS' or 'HH:MM:SS' and converts it to the total number of minutes.
+    The if stsatement checks if the string contains a '-' which indicates that the job has been running for more than 24 hours.
+    The if statements also deal with edge cases where the string isnt as anticipated. Could be more elegant.
+    '''
+
+    split_time = time_string.split(':')
+
+    if '-' in split_time[0]:
+        days = int(split_time[0].split('-')[0])
+        hours = int(split_time[0].split('-')[1])
+        minutes = int(split_time[1])
+        if split_time[2] == '+':
+            seconds = 0
+        else:
+            seconds = int(split_time[2])
+        return (days * 24 * 60) + (hours * 60) + minutes + (seconds /60)
+    else:
+        try:
+            hours = int(split_time[0])
+            minutes = int(split_time[1])
+            seconds = int(split_time[2])
+            return (hours * 60) + minutes + (seconds /60)
+        except:
+            return 0
 if __name__ == '__main__':
     pass
