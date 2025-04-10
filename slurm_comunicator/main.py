@@ -32,6 +32,13 @@ if __name__ == '__main__':
 
     partition_dictionary_n_cores = comms.get_n_cores_partition_dictionary()
     partition_dictionary_n_jobs = comms.get_n_jobs_partition_dictionary()
+    total_cores_in_use = comms.get_total_cores_in_use()
+    total_cores_in_cluster = comms.total_cores_in_cluster
 
     print(partition_dictionary_n_cores)
     print(partition_dictionary_n_jobs)
+
+    print(f'Currently {total_cores_in_use} cores are in use out of {total_cores_in_cluster} cores in the cluster.')
+    print(f'Currently {(total_cores_in_use/total_cores_in_cluster)*100:.2f}/% of the cluster is in use.')
+    print(f'There are {global_quantities["jobs_pending_in_the_queue"]} jobs pending in the queue.')
+    print(f'There are {global_quantities["jobs_running_in_the_queue"]} jobs running in the queue.')

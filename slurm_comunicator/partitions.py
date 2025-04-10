@@ -49,5 +49,17 @@ class Partition:
         return number_of_jobs
 
 
+    def calculate_to_match_with_prometheus(self) -> int:
+        """
+        This function is used to calculate the number of cores in the partition.
+        It returns a dictionary containing the partition name and the number of cores.
+        """
+        number_of_cores = 0
+        for node in self.node_list:
+            node = Node(node)
+            number_of_cores += node.n_cores
+        return number_of_cores
+
+
 if __name__ == '__main__':
     pass

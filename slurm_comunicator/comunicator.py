@@ -13,6 +13,7 @@ class SlurmComms:
 
     def __init__(self):
         self.partitions = self.get_partitions()
+        self.total_cores_in_cluster = self.get_total_cores_in_cluster()
 
     def get_partitions(self) -> list:
         '''
@@ -32,6 +33,14 @@ class SlurmComms:
             number_of_cores += parition.number_of_cores
 
         return number_of_cores
+
+    def get_total_cores_in_cluster(self) -> int:
+        '''
+        This function is used to get the total number of cores in the cluster. It returns the total number of cores.
+        '''
+        raw_data = subprocess.run(['sinfo', '-o', '%C'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+        split_raw_output = raw_data.splitlines()
+        return int(split_raw_output[1].split('/')[-1])
 
     def get_n_running_jobs_in_queue(self) -> int:
         return len(subprocess.run(['squeue', '--state', 'r','-o', '%i'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout.splitlines()) -1
@@ -69,3 +78,4 @@ if __name__ == '__main__':
     print(comms.get_n_running_jobs_in_queue())
     print(comms.get_n_pending_jobs_in_queue())
     print(comms.get_n_cores_partition_dictionary())
+    print(comms.total_cores_in_cluster)
