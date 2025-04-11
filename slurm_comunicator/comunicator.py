@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 from tqdm import tqdm
 from slurm_comunicator.utils import *
 from slurm_comunicator.partitions import Partition
+import line_profiler
 
 class SlurmComms:
     '''
@@ -11,9 +12,10 @@ class SlurmComms:
     the average run time of a job over the last 24 hours.
     '''
 
-    def __init__(self):
+    def __init__(self, prometheus_comparison: bool = False):
         self.partitions = self.get_partitions()
         self.total_cores_in_cluster = self.get_total_cores_in_cluster()
+        self.prometheus_comparison = prometheus_comparison
 
     def get_partitions(self) -> list:
         '''
@@ -29,7 +31,7 @@ class SlurmComms:
         '''
         number_of_cores = 0
         for partition in self.partitions:
-            parition = Partition(partition)
+            parition = Partition(partition, self.prometheus_comparison)
             number_of_cores += parition.number_of_cores
 
         return number_of_cores
@@ -47,7 +49,7 @@ class SlurmComms:
     
     def get_n_pending_jobs_in_queue(self) -> int:
         return len(subprocess.run(['squeue', '--state', 'PD','-o', '%i'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout.splitlines()) -1
-
+    
     def get_n_cores_partition_dictionary(self) -> dict:
         '''
         This function is used to get the number of cores in each partition. 
@@ -56,10 +58,10 @@ class SlurmComms:
         '''
         partition_dictionary = {}
         for partition in self.partitions:
-            partition = Partition(partition)
+            partition = Partition(partition, self.prometheus_comparison)
             partition_dictionary[partition.name] = partition.number_of_cores
         return partition_dictionary
-
+   
     def get_n_jobs_partition_dictionary(self) -> dict:
         '''
         This function is used to get the number of jobs in each partition. 

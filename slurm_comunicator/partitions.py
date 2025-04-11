@@ -2,14 +2,20 @@ import subprocess
 from slurm_comunicator.node import Node
 
 class Partition:
-    def __init__(self, name: str):
+    
+    @profile
+    def __init__(self, name: str, prometheus_comparison: bool = False):
         self.name = name
         self.job_ids = []
         self.all_jobs_information = subprocess.run(
             ['squeue', '-p', self.name, '--state', 'r','--format=%i,%C']
         , stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
         self.node_list = self.dertemine_node_list()
-        self.number_of_cores = self.determine_n_of_cores()
+
+        if prometheus_comparison:
+            self.number_of_cores = self.calculate_to_match_with_prometheus()
+        else:
+            self.number_of_cores = self.determine_n_of_cores()
         self.number_of_jobs = self.determine_n_of_jobs()
        
     def dertemine_node_list(self):

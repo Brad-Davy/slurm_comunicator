@@ -4,27 +4,18 @@ from slurm_comunicator.utils import *
 import numpy as np
 import shutil
 from datetime import date
-
-def print_new_section(title: str, terminal_width) -> None:
-    print('\n')
-    print('#'*(terminal_width//2))
-    print(title)
-    print('#'*(terminal_width//2))
-    print('\n')
+import line_profiler
 
 
-if __name__ == '__main__':
-    '''
-        I should probably abstract some of this code into functions,
-        it has ended up much longer than I had anticipated.
-    '''
+def print_results():
 
     terminal_width = shutil.get_terminal_size().columns
     terminal_height = shutil.get_terminal_size().lines
 
     comms = SlurmComms(prometheus_comparison=False)
-    comms.get_partitions()
 
+
+    comms.get_partitions()
     global_quantities = {'date': date.today(), 
                             'total_number_of_cores' : comms.get_total_cores_in_use(),
                             'jobs_pending_in_the_queue' : comms.get_n_pending_jobs_in_queue(),
@@ -42,3 +33,17 @@ if __name__ == '__main__':
     print(f'Currently {(total_cores_in_use/total_cores_in_cluster)*100:.2f}/% of the cluster is in use.')
     print(f'There are {global_quantities["jobs_pending_in_the_queue"]} jobs pending in the queue.')
     print(f'There are {global_quantities["jobs_running_in_the_queue"]} jobs running in the queue.')
+
+def print_new_section(title: str, terminal_width) -> None:
+    print('\n')
+    print('#'*(terminal_width//2))
+    print(title)
+    print('#'*(terminal_width//2))
+    print('\n')
+
+if __name__ == '__main__':
+    '''
+        I should probably abstract some of this code into functions,
+        it has ended up much longer than I had anticipated.
+    '''
+    print_results()
