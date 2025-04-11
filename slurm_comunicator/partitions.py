@@ -1,23 +1,41 @@
 import subprocess
 from slurm_comunicator.node import Node
+import threading
 
 class Partition:
-    
-    @profile
+
     def __init__(self, name: str, prometheus_comparison: bool = False):
         self.name = name
         self.job_ids = []
-        self.all_jobs_information = subprocess.run(
-            ['squeue', '-p', self.name, '--state', 'r','--format=%i,%C']
-        , stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
-        self.node_list = self.dertemine_node_list()
+
+        def fetch_jobs_information():
+            self.all_jobs_information = subprocess.run(
+            ['squeue', '-p', self.name, '--state', 'r', '--format=%i,%C'],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+            ).stdout
+
+        def fetch_node_list():
+            self.node_list = subprocess.run(
+            ['sinfo', '-p', self.name, '-N', '-o', '%N'],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+            ).stdout
+
+        thread_jobs_information = threading.Thread(target=fetch_jobs_information)
+        thread_jobs_information.start()
+
+        thread_node_list = threading.Thread(target=fetch_node_list)
+        thread_node_list.start()
+
+        thread_jobs_information.join()
+        thread_node_list.join()
 
         if prometheus_comparison:
             self.number_of_cores = self.calculate_to_match_with_prometheus()
         else:
             self.number_of_cores = self.determine_n_of_cores()
         self.number_of_jobs = self.determine_n_of_jobs()
-       
+
+    
     def dertemine_node_list(self):
         """
         Get the list of nodes in the partition.

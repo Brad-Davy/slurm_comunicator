@@ -4,6 +4,7 @@ from tqdm import tqdm
 from slurm_comunicator.utils import *
 from slurm_comunicator.partitions import Partition
 import line_profiler
+import threading 
 
 class SlurmComms:
     '''
@@ -11,11 +12,16 @@ class SlurmComms:
     of cores being used, the number of jobs in the queue, the number of jobs that have completed in the last 24 hours and 
     the average run time of a job over the last 24 hours.
     '''
-
+    @profile
     def __init__(self, prometheus_comparison: bool = False):
-        self.partitions = self.get_partitions()
-        self.total_cores_in_cluster = self.get_total_cores_in_cluster()
         self.prometheus_comparison = prometheus_comparison
+        self.partitions = self.get_partitions()
+        self.total_cores_in_use = self.get_total_cores_in_use()
+        self.total_cores_in_cluster = self.get_total_cores_in_cluster()
+        self.n_running_jobs_in_queue = self.get_n_running_jobs_in_queue()
+        self.n_pending_jobs_in_queue = self.get_n_pending_jobs_in_queue()
+
+
 
     def get_partitions(self) -> list:
         '''
@@ -74,10 +80,4 @@ class SlurmComms:
         return partition_dictionary
 
 if __name__ == '__main__':
-    comms = SlurmComms()
-    print(comms.partitions)
-    print(comms.get_total_cores_in_use())
-    print(comms.get_n_running_jobs_in_queue())
-    print(comms.get_n_pending_jobs_in_queue())
-    print(comms.get_n_cores_partition_dictionary())
-    print(comms.total_cores_in_cluster)
+    pass

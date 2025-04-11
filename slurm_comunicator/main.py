@@ -1,4 +1,3 @@
-
 from slurm_comunicator.comunicator import SlurmComms  
 from slurm_comunicator.utils import *
 import numpy as np
@@ -32,7 +31,7 @@ if __name__ == '__main__':
 
     partition_dictionary_n_cores = comms.get_n_cores_partition_dictionary()
     partition_dictionary_n_jobs = comms.get_n_jobs_partition_dictionary()
-    total_cores_in_use = comms.get_total_cores_in_use()
+    total_cores_in_use = comms.total_cores_in_use
     total_cores_in_cluster = comms.total_cores_in_cluster
 
     print(partition_dictionary_n_cores)
