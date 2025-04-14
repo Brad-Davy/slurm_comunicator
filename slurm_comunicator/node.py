@@ -10,8 +10,6 @@ class Node:
         """
         Get the number of cores available on the node.
         """
-        # This is a placeholder for the actual implementation
-        # In a real scenario, you would use subprocess to call sinfo or similar command
         raw_output = subprocess.run(
             ['scontrol', 'show', 'node', self.host_name]
             , stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
@@ -19,6 +17,5 @@ class Node:
         CPUAlloc_line = [line for line in split_raw_output if 'CPUAlloc' in line]
         return int(CPUAlloc_line[0].split()[0].split('=')[1])
         
-
 if __name__ == '__main__':
     pass
