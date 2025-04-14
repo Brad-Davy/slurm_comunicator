@@ -1,23 +1,24 @@
 import pandas as pd
 from datetime import date
 import numpy as np
-
-''' 
-Plan when it comes to saving. Each partition has its own csv file (soon to be table).
-If the partition does not exist, create the csv file. If it does exist then append to the file.
-Each day, the number of jobs and cores can be appended. This deals with new partitions being made
-and being deleted without loss of data!
-'''
+import os 
 
 
-def create_csv_file(data: dict, file_name: str = 'slurm_comunicator.csv') -> None:
-    csv_file_path = f'/home/bd67/scratch/hypatia_logs/{file_name}'
-    df = pd.DataFrame(data, index=[0])
+def manage_csv_file(partition_name: str, partition_data: dict) -> None:
+
+    file_path = f'/home/bd67/.hypatia_logs/partitions/{partition_name}'
+
+    if not os.path.exists(file_path):
+        os.makedirs(file_path)
+
+    create_csv_file(partition_data, f'{file_path}/{partition_name}_{date.today()}.csv')
+
+def create_csv_file(data: dict, csv_file_path: str) -> None:
+    df = pd.DataFrame(data)
     df.to_csv(csv_file_path, index=False)
 
-def append_csv_file(input_data: dict, file_name: str) -> None:
-    csv_file_path = f'/home/bd67/scratch/hypatia_logs/{file_name}'
-    df = pd.DataFrame(input_data, index=[0])
+def append_csv_file(data: dict, csv_file_path: str) -> None:
+    df = pd.DataFrame(data)
     df.to_csv(csv_file_path, mode='a', header=False, index=False)
 
 def print_csv_file(file_names: list[str]) -> None:

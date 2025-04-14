@@ -84,6 +84,5 @@ class Partition:
             number_of_cores += node.n_cores
         return number_of_cores
 
-
 if __name__ == '__main__':
     pass

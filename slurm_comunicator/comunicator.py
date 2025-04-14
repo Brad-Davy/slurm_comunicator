@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 from tqdm import tqdm
 from slurm_comunicator.utils import *
 from slurm_comunicator.partitions import Partition
+from slurm_comunicator.historic_parition import HistoricPartition
 import line_profiler
 import threading 
 
@@ -12,7 +13,6 @@ class SlurmComms:
     of cores being used, the number of jobs in the queue, the number of jobs that have completed in the last 24 hours and 
     the average run time of a job over the last 24 hours.
     '''
-    @profile
     def __init__(self, prometheus_comparison: bool = False):
         self.prometheus_comparison = prometheus_comparison
         self.partitions = self.get_partitions()
@@ -20,6 +20,11 @@ class SlurmComms:
         self.total_cores_in_cluster = self.get_total_cores_in_cluster()
         self.n_running_jobs_in_queue = self.get_n_running_jobs_in_queue()
         self.n_pending_jobs_in_queue = self.get_n_pending_jobs_in_queue()
+
+        ## Historic data ##
+        for partitions in self.partitions:
+            h_partition = HistoricPartition(partitions)
+            manage_csv_file(h_partition.name, {'run_times': h_partition.run_times, 'requested_times': h_partition.requested_times})
 
 
 
