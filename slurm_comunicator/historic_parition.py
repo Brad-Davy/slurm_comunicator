@@ -2,10 +2,10 @@ from datetime import datetime, timedelta
 import subprocess
 
 class HistoricPartition:
+
     def __init__(self, name: str):
         self.name = name
         self.run_times, self.requested_times = self.get_average_run_times()
-
 
     def _get_completed_job_information(self) -> str:
         '''
@@ -32,7 +32,6 @@ class HistoricPartition:
             return False
 
         return True
-
 
     def get_average_run_times(self) -> tuple[list[float], list[float]]:
         run_times = []

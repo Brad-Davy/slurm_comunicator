@@ -15,10 +15,12 @@ class Partition:
             ).stdout
 
         def fetch_node_list():
-            self.node_list = subprocess.run(
-            ['sinfo', '-p', self.name, '-N', '-o', '%N'],
-            stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
-            ).stdout
+            raw_data = subprocess.run(
+            ["sinfo", "-p", self.name, "-N", "-o", "%N"], 
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+
+            split_raw_output = raw_data.splitlines()
+            self.node_list = [line for line in split_raw_output if 'NODELIST' not in line]
 
         thread_jobs_information = threading.Thread(target=fetch_jobs_information)
         thread_jobs_information.start()
@@ -80,6 +82,7 @@ class Partition:
         """
         number_of_cores = 0
         for node in self.node_list:
+            node = node.split(' ')[0]
             node = Node(node)
             number_of_cores += node.n_cores
         return number_of_cores
