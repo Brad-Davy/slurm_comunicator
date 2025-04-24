@@ -1,5 +1,6 @@
 import subprocess
 from slurm_comunicator.node import Node
+from slurm_comunicator.queues import Queues
 import threading
 
 class Partition:
@@ -7,6 +8,11 @@ class Partition:
     def __init__(self, name: str, prometheus_comparison: bool = False):
         self.name = name
         self.job_ids = []
+        self.queue_object =  Queues(self.name)
+        self.average_wait_time = self.queue_object.get_average_wait_time()
+        self.jobs_pending = self.queue_object.jobs_pending
+
+
 
         def fetch_jobs_information():
             self.all_jobs_information = subprocess.run(
