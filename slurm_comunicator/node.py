@@ -1,6 +1,5 @@
 import subprocess
 
-
 class Node:
     def __init__(self, host_name: str):
         self.host_name = host_name

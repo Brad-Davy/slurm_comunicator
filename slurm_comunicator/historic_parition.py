@@ -6,7 +6,6 @@ class HistoricPartition:
         self.name = name
         self.run_times, self.requested_times = self.get_average_run_times()
 
-
     def _get_completed_job_information(self) -> str:
         '''
         This function is used to get the information of all the jobs that have completed in the last 24 hours. It returns a string
@@ -33,11 +32,10 @@ class HistoricPartition:
 
         return True
 
-
     def get_average_run_times(self) -> tuple[list[float], list[float]]:
         run_times = []
         requested_times = []
-
+        
         for lines in self._get_completed_job_information().split('\n'):
             split_data = lines.split()
 
