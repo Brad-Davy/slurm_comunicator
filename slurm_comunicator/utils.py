@@ -4,7 +4,7 @@ import numpy as np
 import os 
 
 
-def manage_csv_file(partition_name: str, partition_data: dict) -> None:
+def manage_partition_csv_file(partition_name: str, partition_data: dict) -> None:
 
     file_path = f'/home/bd67/.hypatia_logs/partitions/{partition_name}'
 
@@ -12,6 +12,16 @@ def manage_csv_file(partition_name: str, partition_data: dict) -> None:
         os.makedirs(file_path)
 
     create_csv_file(partition_data, f'{file_path}/{partition_name}_{date.today()}.csv')
+
+def manage_csv_file(data: dict, file_name: str) -> None:
+
+
+    file_path = f'/home/bd67/.hypatia_logs/{file_name.split('-')[0]}'
+
+    if not os.path.exists(file_path):
+        os.makedirs(file_path)
+
+    create_csv_file(data, file_path+f'/{file_name}')
 
 def create_csv_file(data: dict, csv_file_path: str) -> None:
     df = pd.DataFrame(data)
