@@ -37,6 +37,11 @@ if __name__ == '__main__':
     total_cores_in_use = comms.total_cores_in_use
     total_cores_in_cluster = comms.total_cores_in_cluster
 
+    manage_csv_file([partition_dictionary_n_cores], f'number_of_cores-{date.today()}.csv')
+    manage_csv_file([partition_dictionary_n_jobs], f'number_of_jobs-{date.today()}.csv')
+    manage_csv_file([partition_dictionary_wait_times], f'wait_times-{date.today()}.csv')
+    manage_csv_file([queue_length_dictionary], f'jobs_pending-{date.today()}.csv')
+
     print('-'*int(0.7*terminal_width))
     print(f'Cores dictionary: {partition_dictionary_n_cores}')
     print(f'Jobs dictionary: {partition_dictionary_n_jobs}')

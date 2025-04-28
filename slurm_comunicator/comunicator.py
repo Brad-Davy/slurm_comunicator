@@ -21,7 +21,7 @@ class SlurmComms:
         def fetch_historic_data():
             for partitions in self.partitions:
                 h_partition = HistoricPartition(partitions)
-                manage_csv_file(h_partition.name, {'run_times': h_partition.run_times, 'requested_times': h_partition.requested_times})
+                manage_partition_csv_file(h_partition.name, {'run_times': h_partition.run_times, 'requested_times': h_partition.requested_times})
 
         thread_historic_data = threading.Thread(target=fetch_historic_data)
         thread_historic_data.start()
