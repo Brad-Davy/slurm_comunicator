@@ -84,6 +84,34 @@ class Queues:
 
         return parsed_data
 
+    def determine_users(self) -> dict:
+        """
+        Determines a dictionary of users which have submitted jobs.
+
+        Returns:
+            dict:{user : n_jobs}
+        """
+        raw_job_data = subprocess.run(['sacct',
+                                       '--format=User',
+                                       '--starttime=now-1day',
+                                       f'--partition={self.partition_name}',
+                                       '--parsable2',
+                                       '--allocations',
+                                       '--allusers'],
+                                      stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+        user_dict = {}
+        for lines in raw_job_data.splitlines():
+
+            if lines == 'User':
+                continue
+
+            else:
+                if lines in user_dict:
+                    user_dict[lines] += 1
+                else:
+                    user_dict[lines] = 1
+        return user_dict
+    
     def get_average_wait_time(self) -> int:
         """
         Computes the average wait time for jobs submitted in the last 24 hours.
@@ -101,7 +129,7 @@ class Queues:
                                       stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
         parsed_data_list = self.parse_time_data(raw_job_data)
-
+    
         if len(parsed_data_list) < 1:
             return 0
 
@@ -111,9 +139,12 @@ class Queues:
             if wait_time > 0:
                 wait_times.append(wait_time)
         self.wait_times_list = wait_times
-        return int(np.average(wait_times) // 60)
-
+        if len(wait_times) > 0:
+            return int(np.average(wait_times) // 60)
+        else:
+            return 0
 
 if __name__ == '__main__':
-    partition = Queues('large-long')
+    partition = Queues('large-short')
     print(f'Average wait time: {partition.get_average_wait_time()} minutes.')
+    print(partition.determine_users())

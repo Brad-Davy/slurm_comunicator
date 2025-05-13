@@ -105,4 +105,7 @@ class SlurmComms:
         return partition_dictionary
 
 if __name__ == '__main__':
-    pass
+    comms = SlurmComms()
+    print(comms.get_average_wait_time_partition_dictionary())
+
+
