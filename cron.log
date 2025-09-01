@@ -2640,3 +2640,24 @@ Currently 56.55/% of the cluster is in use.
 --------------------------------------------------------
 There are 5 jobs pending in the queue.
 There are 13 jobs running in the queue.
+Mon 1 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                      __           
+  / ___// /_  ___________ ___  / ____/  ______  ____  _____/ /____  _____
+  \__ \/ / / / / ___/ __ `__ \/ __/ | |/_/ __ \/ __ \/ ___/ __/ _ \/ ___/
+ ___/ / / /_/ / /  / / / / / / /____>  </ /_/ / /_/ / /  / /_/  __/ /    
+/____/_/\__,_/_/  /_/ /_/ /_/_____/_/|_/ .___/\____/_/   \__/\___/_/     
+                                      /_/                                
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 0, 'small-short': 28, 'large-long': 10056, 'small-long': 174, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 0, 'small-short': 2, 'large-long': 10, 'small-long': 11, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 277, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 1, 'large-long': 2, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 10258 cores are in use out of 16544 cores in the cluster.
+Currently 62.00/% of the cluster is in use.
+--------------------------------------------------------
+There are 5 jobs pending in the queue.
+There are 23 jobs running in the queue.
