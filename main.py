@@ -1,4 +1,3 @@
-
 from slurm_comunicator.comunicator import SlurmComms  # Class names should be PascalCase
 from slurm_comunicator.utils import *
 import numpy as np
@@ -8,6 +7,8 @@ if __name__ == '__main__':
     comms = SlurmComms()
     
     create_excel = False
+
+    print('Hello, world!')
 
     ## Get statistics on the number of cores being used
     total_cores_used = comms.get_total_number_of_cores_in_use()
@@ -29,4 +30,3 @@ if __name__ == '__main__':
     print(f'Average requested time over last 24 hours: {convert_minuets_in_to_time_string(average_requested_time)}')
     print(f'Average run time over last 24 hours: {convert_minuets_in_to_time_string(average_run_time)}')
 
- 

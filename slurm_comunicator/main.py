@@ -23,7 +23,7 @@ if __name__ == '__main__':
     print(pyfiglet.figlet_format("SlurmExporter", font="slant"))
     comms = SlurmComms(prometheus_comparison=False)
     comms.get_partitions()
-
+    print(comms)
     global_quantities = {'date': date.today(), 
                             'total_number_of_cores' : comms.get_total_cores_in_use(),
                             'jobs_pending_in_the_queue' : comms.get_n_pending_jobs_in_queue(),

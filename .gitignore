@@ -1,2 +1,6 @@
 env/
-slurm_comunicator/*.xlsx
+__pycache__/  
+_build/  
+_static/  
+_templates/
+source/

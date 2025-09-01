@@ -32,6 +32,9 @@ class SlurmComms:
         self.n_pending_jobs_in_queue = self.get_n_pending_jobs_in_queue()
         thread_historic_data.join()
 
+    def __str__(self):
+        return f'Partitions: {self.partitions}'
+
     def get_partitions(self) -> list:
         '''
         This function is used to get the partitions on the HPC. It returns a list of partitions.
@@ -105,4 +108,7 @@ class SlurmComms:
         return partition_dictionary
 
 if __name__ == '__main__':
-    pass
+    comms = SlurmComms()
+    print(comms.get_average_wait_time_partition_dictionary())
+
+

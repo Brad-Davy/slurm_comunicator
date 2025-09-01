@@ -12,7 +12,7 @@ class Partition:
         self.average_wait_time = self.queue_object.get_average_wait_time()
         self.jobs_pending = self.queue_object.jobs_pending
 
-
+            
 
         def fetch_jobs_information():
             self.all_jobs_information = subprocess.run(
@@ -43,7 +43,9 @@ class Partition:
             self.number_of_cores = self.determine_n_of_cores()
         self.number_of_jobs = self.determine_n_of_jobs()
 
-    
+    def __str__(self):
+        return f'Partition name: {self.name}.'
+
     def dertemine_node_list(self):
         """
         Get the list of nodes in the partition.
