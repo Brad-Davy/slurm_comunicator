@@ -6,7 +6,7 @@ import os
 
 def manage_partition_csv_file(partition_name: str, partition_data: dict) -> None:
 
-    file_path = f'/home/bd67/.hypatia_logs/partitions/{partition_name}'
+    file_path = f'/opt/python_monitoring/.logs/partitions/{partition_name}'
 
     if not os.path.exists(file_path):
         os.makedirs(file_path)
@@ -16,7 +16,7 @@ def manage_partition_csv_file(partition_name: str, partition_data: dict) -> None
 def manage_csv_file(data: dict, file_name: str) -> None:
 
 
-    file_path = f'/home/bd67/.hypatia_logs/{file_name.split('-')[0]}'
+    file_path = f"/opt/python_monitoring/.logs/{file_name.split('-')[0]}"
 
     if not os.path.exists(file_path):
         os.makedirs(file_path)
@@ -33,7 +33,7 @@ def append_csv_file(data: dict, csv_file_path: str) -> None:
 
 def print_csv_file(file_names: list[str]) -> None:
     for file_name in file_names:
-        csv_file_path = f'/home/bd67/scratch/hypatia_logs/{file_name}'
+        csv_file_path = f'/opt/python_monitoring/scratch/hypatia_logs/{file_name}'
         
         try:
             df = pd.read_csv(csv_file_path, on_bad_lines="skip", engine="python")  # Skip bad lines
