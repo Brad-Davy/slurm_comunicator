@@ -6,3 +6,4 @@ pytest
 pymssql
 sphinx
 line_profiler
+pyfiglet
