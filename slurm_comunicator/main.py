@@ -20,7 +20,7 @@ if __name__ == '__main__':
     terminal_height = shutil.get_terminal_size().lines
 
     print('-'*int(0.7*terminal_width))
-    print(pyfiglet.figlet_format("SlurmExporter", font="slant"))
+    print(pyfiglet.figlet_format("SlurmCommunicator", font="slant"))
     comms = SlurmComms(prometheus_comparison=False)
     comms.get_partitions()
     print(comms)
