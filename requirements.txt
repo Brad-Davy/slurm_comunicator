@@ -5,3 +5,4 @@ openpyxl
 pytest
 pymssql
 sphinx
+line_profiler
