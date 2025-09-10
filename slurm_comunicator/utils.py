@@ -16,7 +16,7 @@ def manage_partition_csv_file(partition_name: str, partition_data: dict) -> None
 def manage_csv_file(data: dict, file_name: str) -> None:
 
 
-    file_path = f"/opt/python_monitoring/.logs/{file_name.split('-')[0]}"
+    file_path = f"/opt/python_monitoring/logs/{file_name.split('-')[0]}"
 
     if not os.path.exists(file_path):
         os.makedirs(file_path)
