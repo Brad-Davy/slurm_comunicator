@@ -2829,3 +2829,1420 @@ Currently 60.35/% of the cluster is in use.
 --------------------------------------------------------
 There are 14 jobs pending in the queue.
 There are 39 jobs running in the queue.
+Wed 10 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1790, 'small-short': 0, 'large-long': 8188, 'small-long': 32, 'debug': 0, 'interactive': 16, 'ch4421': 0, 'bigmem': 112, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 2, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 6, 'small-short': 0, 'large-long': 20, 'small-long': 2, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 141, 'small-short': 0, 'large-long': 59, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 10140 cores are in use out of 16544 cores in the cluster.
+Currently 61.29/% of the cluster is in use.
+--------------------------------------------------------
+There are 4 jobs pending in the queue.
+There are 32 jobs running in the queue.
+Thu 11 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1046, 'small-short': 0, 'large-long': 6724, 'small-long': 72, 'debug': 0, 'interactive': 16, 'ch4421': 0, 'bigmem': 112, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 7, 'small-short': 0, 'large-long': 18, 'small-long': 4, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 76, 'small-short': 0, 'large-long': 43, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 7971 cores are in use out of 16544 cores in the cluster.
+Currently 48.18/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 33 jobs running in the queue.
+Fri 12 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 736, 'small-short': 128, 'large-long': 9424, 'small-long': 64, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 384, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 2, 'small-short': 9, 'large-long': 20, 'small-long': 4, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 12, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 8, 'large-long': 3, 'small-long': 1, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 37, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 96, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 10736 cores are in use out of 16544 cores in the cluster.
+Currently 64.89/% of the cluster is in use.
+--------------------------------------------------------
+There are 2 jobs pending in the queue.
+There are 47 jobs running in the queue.
+Sat 13 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 672, 'small-short': 28, 'large-long': 8402, 'small-long': 130, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 214, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 384, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 1, 'small-short': 2, 'large-long': 22, 'small-long': 9, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 4, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 12, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 12, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 807, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 60, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 9830 cores are in use out of 16544 cores in the cluster.
+Currently 59.42/% of the cluster is in use.
+--------------------------------------------------------
+There are 1 jobs pending in the queue.
+There are 50 jobs running in the queue.
+Sun 14 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 8144, 'small-long': 86, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 384, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 20, 'small-long': 6, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 12, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 23, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1347, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 42, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 8614 cores are in use out of 16544 cores in the cluster.
+Currently 52.07/% of the cluster is in use.
+--------------------------------------------------------
+There are 1 jobs pending in the queue.
+There are 38 jobs running in the queue.
+Mon 15 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 0, 'small-short': 88, 'large-long': 9444, 'small-long': 150, 'debug': 0, 'interactive': 16, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 384, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 0, 'small-short': 5, 'large-long': 29, 'small-long': 11, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 12, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 10, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 24, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 10082 cores are in use out of 16544 cores in the cluster.
+Currently 60.94/% of the cluster is in use.
+--------------------------------------------------------
+There are 2 jobs pending in the queue.
+There are 57 jobs running in the queue.
+Tue 16 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1710, 'small-short': 32, 'large-long': 8308, 'small-long': 324, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 384, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 6, 'small-short': 2, 'large-long': 30, 'small-long': 24, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 12, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 6, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 6, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 10759 cores are in use out of 16544 cores in the cluster.
+Currently 65.03/% of the cluster is in use.
+--------------------------------------------------------
+There are 4 jobs pending in the queue.
+There are 72 jobs running in the queue.
+Wed 17 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 878, 'small-short': 32, 'large-long': 6772, 'small-long': 277, 'debug': 0, 'interactive': 16, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 5, 'small-short': 2, 'large-long': 30, 'small-long': 19, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 2, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 7976 cores are in use out of 16544 cores in the cluster.
+Currently 48.21/% of the cluster is in use.
+--------------------------------------------------------
+There are 1 jobs pending in the queue.
+There are 57 jobs running in the queue.
+Thu 18 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1368, 'small-short': 0, 'large-long': 7184, 'small-long': 395, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 5, 'small-short': 0, 'large-long': 28, 'small-long': 26, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 8947 cores are in use out of 16544 cores in the cluster.
+Currently 54.08/% of the cluster is in use.
+--------------------------------------------------------
+There are 1 jobs pending in the queue.
+There are 59 jobs running in the queue.
+Fri 19 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 800, 'small-short': 124, 'large-long': 7634, 'small-long': 388, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 2, 'small-short': 8, 'large-long': 25, 'small-long': 26, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 57, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 8946 cores are in use out of 16544 cores in the cluster.
+Currently 54.07/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 61 jobs running in the queue.
+Sat 20 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 576, 'small-short': 0, 'large-long': 7988, 'small-long': 250, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 24, 'small-long': 15, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 8814 cores are in use out of 16544 cores in the cluster.
+Currently 53.28/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 40 jobs running in the queue.
+Sun 21 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 576, 'small-short': 0, 'large-long': 8072, 'small-long': 238, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 25, 'small-long': 17, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 8886 cores are in use out of 16544 cores in the cluster.
+Currently 53.71/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 43 jobs running in the queue.
+Mon 22 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 2352, 'small-short': 38, 'large-long': 7477, 'small-long': 514, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 2, 'small-short': 2, 'large-long': 17, 'small-long': 33, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 2, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 10381 cores are in use out of 16544 cores in the cluster.
+Currently 62.75/% of the cluster is in use.
+--------------------------------------------------------
+There are 1 jobs pending in the queue.
+There are 54 jobs running in the queue.
+Tue 23 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 336, 'small-short': 64, 'large-long': 7845, 'small-long': 482, 'debug': 0, 'interactive': 16, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 1, 'small-short': 6, 'large-long': 22, 'small-long': 33, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 14, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 8743 cores are in use out of 16544 cores in the cluster.
+Currently 52.85/% of the cluster is in use.
+--------------------------------------------------------
+There are 1 jobs pending in the queue.
+There are 63 jobs running in the queue.
+Wed 24 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 2616, 'small-short': 76, 'large-long': 8023, 'small-long': 792, 'debug': 3, 'interactive': 0, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 8, 'small-short': 7, 'large-long': 27, 'small-long': 53, 'debug': 3, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 8, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 11670 cores are in use out of 16544 cores in the cluster.
+Currently 70.54/% of the cluster is in use.
+--------------------------------------------------------
+There are 3 jobs pending in the queue.
+There are 99 jobs running in the queue.
+Thu 25 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 2544, 'small-short': 44, 'large-long': 8508, 'small-long': 974, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 4, 'small-short': 5, 'large-long': 33, 'small-long': 76, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 12, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 1, 'small-long': 1, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 12230 cores are in use out of 16544 cores in the cluster.
+Currently 73.92/% of the cluster is in use.
+--------------------------------------------------------
+There are 6 jobs pending in the queue.
+There are 119 jobs running in the queue.
+Fri 26 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 2816, 'small-short': 64, 'large-long': 8280, 'small-long': 668, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 160, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 5, 'small-short': 6, 'large-long': 37, 'small-long': 44, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 1, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 137, 'small-short': 2, 'large-long': 116, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 8, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 12149 cores are in use out of 16544 cores in the cluster.
+Currently 73.43/% of the cluster is in use.
+--------------------------------------------------------
+There are 10 jobs pending in the queue.
+There are 95 jobs running in the queue.
+Sat 27 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1832, 'small-short': 28, 'large-long': 7790, 'small-long': 404, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 9, 'small-short': 2, 'large-long': 29, 'small-long': 28, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 477, 'small-short': 1, 'large-long': 134, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 5, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 10215 cores are in use out of 16544 cores in the cluster.
+Currently 61.74/% of the cluster is in use.
+--------------------------------------------------------
+There are 8 jobs pending in the queue.
+There are 70 jobs running in the queue.
+Sun 28 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1776, 'small-short': 52, 'large-long': 7538, 'small-long': 216, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 48, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 12, 'small-short': 3, 'large-long': 30, 'small-long': 21, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 94, 'small-short': 0, 'large-long': 143, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 677, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 5, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 9631 cores are in use out of 16544 cores in the cluster.
+Currently 58.21/% of the cluster is in use.
+--------------------------------------------------------
+There are 5 jobs pending in the queue.
+There are 68 jobs running in the queue.
+Mon 29 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 2040, 'small-short': 17, 'large-long': 8560, 'small-long': 456, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 12, 'small-short': 4, 'large-long': 36, 'small-long': 37, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 35, 'small-short': 0, 'large-long': 105, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1355, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 2, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 11074 cores are in use out of 16544 cores in the cluster.
+Currently 66.94/% of the cluster is in use.
+--------------------------------------------------------
+There are 3 jobs pending in the queue.
+There are 90 jobs running in the queue.
+Tue 30 Sep 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1848, 'small-short': 32, 'large-long': 7960, 'small-long': 582, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 186, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 22, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 6, 'small-short': 4, 'large-long': 29, 'small-long': 43, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 2, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 119, 'small-short': 0, 'large-long': 112, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 6, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 10630 cores are in use out of 16544 cores in the cluster.
+Currently 64.25/% of the cluster is in use.
+--------------------------------------------------------
+There are 7 jobs pending in the queue.
+There are 86 jobs running in the queue.
+Wed 1 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 128, 'small-short': 89, 'large-long': 8412, 'small-long': 488, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 224, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 43, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 2, 'small-short': 6, 'large-long': 25, 'small-long': 38, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 3, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 71, 'small-short': 0, 'large-long': 105, 'small-long': 9, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 2, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 9384 cores are in use out of 16544 cores in the cluster.
+Currently 56.72/% of the cluster is in use.
+--------------------------------------------------------
+There are 2 jobs pending in the queue.
+There are 76 jobs running in the queue.
+Thu 2 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1808, 'small-short': 62, 'large-long': 8390, 'small-long': 330, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 64, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 42, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 11, 'small-short': 4, 'large-long': 32, 'small-long': 28, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 2, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 90, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 2, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 10696 cores are in use out of 16544 cores in the cluster.
+Currently 64.65/% of the cluster is in use.
+--------------------------------------------------------
+There are 3 jobs pending in the queue.
+There are 78 jobs running in the queue.
+Fri 3 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 632, 'small-short': 17, 'large-long': 6008, 'small-long': 2200, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 3, 'small-short': 2, 'large-long': 25, 'small-long': 112, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 21, 'small-short': 0, 'large-long': 68, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 8858 cores are in use out of 16544 cores in the cluster.
+Currently 53.54/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 143 jobs running in the queue.
+Sat 4 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 3760, 'small-long': 1738, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 160, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 24, 'small-long': 83, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 1, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 27, 'small-short': 0, 'large-long': 35, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 5659 cores are in use out of 16544 cores in the cluster.
+Currently 34.21/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 109 jobs running in the queue.
+Sun 5 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 4840, 'small-long': 1378, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 19, 'small-long': 69, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 57, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 6219 cores are in use out of 16544 cores in the cluster.
+Currently 37.59/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 89 jobs running in the queue.
+Mon 6 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 536, 'small-short': 16, 'large-long': 7116, 'small-long': 932, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs dictionary: {'large-short': 3, 'small-short': 1, 'large-long': 20, 'small-long': 62, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 30, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0}
+--------------------------------------------------------
+Currently 8600 cores are in use out of 16544 cores in the cluster.
+Currently 51.98/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 86 jobs running in the queue.
+Tue 7 Oct 12:00:02 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 0, 'small-short': 154, 'large-long': 4925, 'small-long': 884, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 320, 'vbigmem': 64, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 0, 'small-short': 9, 'large-long': 22, 'small-long': 61, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 1, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 46, 'small-short': 0, 'large-long': 19, 'small-long': 0, 'debug': 81, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 6348 cores are in use out of 16544 cores in the cluster.
+Currently 38.37/% of the cluster is in use.
+--------------------------------------------------------
+There are 1 jobs pending in the queue.
+There are 95 jobs running in the queue.
+Wed 8 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1280, 'small-short': 97, 'large-long': 7196, 'small-long': 644, 'debug': 0, 'interactive': 16, 'ch4421': 0, 'bigmem': 320, 'vbigmem': 25, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 10, 'small-short': 5, 'large-long': 26, 'small-long': 44, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 1, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 53, 'small-short': 0, 'large-long': 31, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 9579 cores are in use out of 16544 cores in the cluster.
+Currently 57.90/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 89 jobs running in the queue.
+Thu 9 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 646, 'small-short': 30, 'large-long': 6570, 'small-long': 1324, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 8, 'small-short': 2, 'large-long': 32, 'small-long': 68, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 20, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 8731 cores are in use out of 16544 cores in the cluster.
+Currently 52.77/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 112 jobs running in the queue.
+Fri 10 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 2744, 'small-short': 8, 'large-long': 4680, 'small-long': 184, 'debug': 48, 'interactive': 0, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 2, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 17, 'small-short': 1, 'large-long': 22, 'small-long': 20, 'debug': 2, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 2, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 44, 'small-short': 0, 'large-long': 40, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 5, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 7826 cores are in use out of 16544 cores in the cluster.
+Currently 47.30/% of the cluster is in use.
+--------------------------------------------------------
+There are 5 jobs pending in the queue.
+There are 65 jobs running in the queue.
+Sat 11 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 782, 'small-short': 0, 'large-long': 6736, 'small-long': 134, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 320, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 2, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 6, 'small-short': 0, 'large-long': 26, 'small-long': 15, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 2, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 19, 'small-short': 0, 'large-long': 25, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 7974 cores are in use out of 16544 cores in the cluster.
+Currently 48.20/% of the cluster is in use.
+--------------------------------------------------------
+There are 3 jobs pending in the queue.
+There are 51 jobs running in the queue.
+Sun 12 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 336, 'small-short': 0, 'large-long': 5704, 'small-long': 262, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 2, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 28, 'small-long': 24, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 2, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 6464 cores are in use out of 16544 cores in the cluster.
+Currently 39.07/% of the cluster is in use.
+--------------------------------------------------------
+There are 3 jobs pending in the queue.
+There are 56 jobs running in the queue.
+Mon 13 Oct 12:00:02 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 260, 'small-short': 0, 'large-long': 6686, 'small-long': 418, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 320, 'vbigmem': 160, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 2, 'small-short': 0, 'large-long': 28, 'small-long': 30, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 1, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 572, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 7844 cores are in use out of 16544 cores in the cluster.
+Currently 47.41/% of the cluster is in use.
+--------------------------------------------------------
+There are 3 jobs pending in the queue.
+There are 63 jobs running in the queue.
+Tue 14 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 536, 'small-short': 130, 'large-long': 4434, 'small-long': 516, 'debug': 0, 'interactive': 34, 'ch4421': 0, 'bigmem': 49, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 4, 'small-short': 10, 'large-long': 24, 'small-long': 34, 'debug': 0, 'interactive': 4, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 4, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 5699 cores are in use out of 16544 cores in the cluster.
+Currently 34.45/% of the cluster is in use.
+--------------------------------------------------------
+There are 3 jobs pending in the queue.
+There are 78 jobs running in the queue.
+Wed 15 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1676, 'small-short': 48, 'large-long': 5622, 'small-long': 686, 'debug': 0, 'interactive': 2, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 24, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 9, 'small-short': 4, 'large-long': 25, 'small-long': 40, 'debug': 0, 'interactive': 2, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 1, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 8218 cores are in use out of 16544 cores in the cluster.
+Currently 49.67/% of the cluster is in use.
+--------------------------------------------------------
+There are 3 jobs pending in the queue.
+There are 82 jobs running in the queue.
+Thu 16 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1168, 'small-short': 57, 'large-long': 6540, 'small-long': 670, 'debug': 0, 'interactive': 17, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 6, 'small-short': 5, 'large-long': 30, 'small-long': 40, 'debug': 0, 'interactive': 2, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 6, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 2, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 8452 cores are in use out of 16544 cores in the cluster.
+Currently 51.09/% of the cluster is in use.
+--------------------------------------------------------
+There are 2 jobs pending in the queue.
+There are 83 jobs running in the queue.
+Fri 17 Oct 12:00:02 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 2660, 'small-short': 88, 'large-long': 6946, 'small-long': 1078, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 48, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 15, 'small-short': 9, 'large-long': 28, 'small-long': 64, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 1, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 25, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 13, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 10820 cores are in use out of 16544 cores in the cluster.
+Currently 65.40/% of the cluster is in use.
+--------------------------------------------------------
+There are 13 jobs pending in the queue.
+There are 117 jobs running in the queue.
+Sat 18 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 3024, 'small-short': 14, 'large-long': 5920, 'small-long': 302, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 10, 'small-short': 1, 'large-long': 27, 'small-long': 22, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 115, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 6, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 9260 cores are in use out of 16544 cores in the cluster.
+Currently 55.97/% of the cluster is in use.
+--------------------------------------------------------
+There are 6 jobs pending in the queue.
+There are 60 jobs running in the queue.
+Sun 19 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 872, 'small-short': 0, 'large-long': 4260, 'small-long': 318, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 20, 'small-long': 24, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 78, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 2, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 5610 cores are in use out of 16544 cores in the cluster.
+Currently 33.91/% of the cluster is in use.
+--------------------------------------------------------
+There are 2 jobs pending in the queue.
+There are 48 jobs running in the queue.
+Mon 20 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1072, 'small-short': 0, 'large-long': 6368, 'small-long': 1190, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 168, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 5, 'small-short': 0, 'large-long': 21, 'small-long': 73, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 8799 cores are in use out of 16544 cores in the cluster.
+Currently 53.19/% of the cluster is in use.
+--------------------------------------------------------
+There are 4 jobs pending in the queue.
+There are 102 jobs running in the queue.
+Tue 21 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1108, 'small-short': 33, 'large-long': 4136, 'small-long': 454, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 160, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 7, 'small-short': 3, 'large-long': 15, 'small-long': 30, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 22, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 5, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 5891 cores are in use out of 16544 cores in the cluster.
+Currently 35.61/% of the cluster is in use.
+--------------------------------------------------------
+There are 6 jobs pending in the queue.
+There are 56 jobs running in the queue.
+Wed 22 Oct 12:00:02 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 932, 'small-short': 68, 'large-long': 3606, 'small-long': 558, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 7, 'small-short': 4, 'large-long': 16, 'small-long': 36, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 38, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 5164 cores are in use out of 16544 cores in the cluster.
+Currently 31.21/% of the cluster is in use.
+--------------------------------------------------------
+There are 4 jobs pending in the queue.
+There are 63 jobs running in the queue.
+Thu 23 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1476, 'small-short': 135, 'large-long': 6002, 'small-long': 1002, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 10, 'small-short': 9, 'large-long': 23, 'small-long': 52, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 29, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 4, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 8616 cores are in use out of 16544 cores in the cluster.
+Currently 52.08/% of the cluster is in use.
+--------------------------------------------------------
+There are 4 jobs pending in the queue.
+There are 95 jobs running in the queue.
+Fri 24 Oct 12:00:01 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1525, 'small-short': 128, 'large-long': 6826, 'small-long': 496, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 164, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 13, 'small-short': 8, 'large-long': 28, 'small-long': 32, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 9, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 3, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 9140 cores are in use out of 16544 cores in the cluster.
+Currently 55.25/% of the cluster is in use.
+--------------------------------------------------------
+There are 3 jobs pending in the queue.
+There are 83 jobs running in the queue.
+Sat 25 Oct 12:00:02 BST 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 184, 'small-short': 28, 'large-long': 6396, 'small-long': 218, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 164, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 2, 'small-short': 2, 'large-long': 29, 'small-long': 18, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 66, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 6991 cores are in use out of 16544 cores in the cluster.
+Currently 42.26/% of the cluster is in use.
+--------------------------------------------------------
+There are 0 jobs pending in the queue.
+There are 53 jobs running in the queue.
+Sun 26 Oct 12:00:01 GMT 2025
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/sharedscratch/bd67/dev/slurm_comunicator/slurm_comunicator/main.py", line 24, in <module>
+    comms = SlurmComms(prometheus_comparison=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sharedscratch/bd67/dev/slurm_comunicator/slurm_comunicator/comunicator.py", line 29, in __init__
+    self.total_cores_in_use = self.get_total_cores_in_use()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sharedscratch/bd67/dev/slurm_comunicator/slurm_comunicator/comunicator.py", line 52, in get_total_cores_in_use
+    parition = Partition(partition, self.prometheus_comparison)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sharedscratch/bd67/dev/slurm_comunicator/slurm_comunicator/partitions.py", line 12, in __init__
+    self.average_wait_time = self.queue_object.get_average_wait_time()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sharedscratch/bd67/dev/slurm_comunicator/slurm_comunicator/queues.py", line 138, in get_average_wait_time
+    wait_time = self.sub_start_time_difference(lines)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sharedscratch/bd67/dev/slurm_comunicator/slurm_comunicator/queues.py", line 67, in sub_start_time_difference
+    return convert_string_to_number_of_seconds(str(wait_time))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sharedscratch/bd67/dev/slurm_comunicator/slurm_comunicator/utils.py", line 102, in convert_string_to_number_of_seconds
+    days = int(split_time[0].split('-')[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Mon 27 Oct 12:00:02 GMT 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1240, 'small-short': 195, 'large-long': 4324, 'small-long': 538, 'debug': 2, 'interactive': 0, 'ch4421': 0, 'bigmem': 164, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 7, 'small-short': 12, 'large-long': 22, 'small-long': 36, 'debug': 2, 'interactive': 0, 'ch4421': 0, 'bigmem': 1, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 3, 'small-short': 17, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 2, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 6463 cores are in use out of 16544 cores in the cluster.
+Currently 39.07/% of the cluster is in use.
+--------------------------------------------------------
+There are 2 jobs pending in the queue.
+There are 80 jobs running in the queue.
+Tue 28 Oct 12:00:01 GMT 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 828, 'small-short': 227, 'large-long': 6730, 'small-long': 456, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 48, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 6, 'small-short': 16, 'large-long': 31, 'small-long': 32, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 3, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 126, 'small-short': 4, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 1, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 1, 'small-short': 0, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 3, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 8289 cores are in use out of 16544 cores in the cluster.
+Currently 50.10/% of the cluster is in use.
+--------------------------------------------------------
+There are 2 jobs pending in the queue.
+There are 88 jobs running in the queue.
+Wed 29 Oct 12:00:02 GMT 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 300, 'small-short': 185, 'large-long': 5322, 'small-long': 776, 'debug': 0, 'interactive': 16, 'ch4421': 0, 'bigmem': 320, 'vbigmem': 0, 'gpu.L40S': 96, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 3, 'small-short': 14, 'large-long': 39, 'small-long': 47, 'debug': 0, 'interactive': 1, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 6, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 10, 'small-short': 5, 'large-long': 8, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 38, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 18, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 0, 'small-short': 2, 'large-long': 0, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 7015 cores are in use out of 16544 cores in the cluster.
+Currently 42.40/% of the cluster is in use.
+--------------------------------------------------------
+There are 2 jobs pending in the queue.
+There are 112 jobs running in the queue.
+Thu 30 Oct 12:00:02 GMT 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 1812, 'small-short': 191, 'large-long': 7026, 'small-long': 794, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 320, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 16, 'small-short': 15, 'large-long': 49, 'small-long': 52, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 2, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 27, 'small-short': 23, 'large-long': 4, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 246, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 139, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 6, 'small-short': 0, 'large-long': 11, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 10143 cores are in use out of 16544 cores in the cluster.
+Currently 61.31/% of the cluster is in use.
+--------------------------------------------------------
+There are 17 jobs pending in the queue.
+There are 134 jobs running in the queue.
+Fri 31 Oct 12:00:02 GMT 2025
+--------------------------------------------------------
+   _____ __                     ______                                      _ 
+  / ___// /_  ___________ ___  / ____/___  ____ ___  ____ ___  __  ______  (_)
+  \__ \/ / / / / ___/ __ `__ \/ /   / __ \/ __ `__ \/ __ `__ \/ / / / __ \/ / 
+ ___/ / / /_/ / /  / / / / / / /___/ /_/ / / / / / / / / / / / /_/ / / / / /  
+/____/_/\__,_/_/  /_/ /_/ /_/\____/\____/_/ /_/ /_/_/ /_/ /_/\__,_/_/ /_/_/   
+                                                                              
+              __            
+  _________ _/ /_____  _____
+ / ___/ __ `/ __/ __ \/ ___/
+/ /__/ /_/ / /_/ /_/ / /    
+\___/\__,_/\__/\____/_/     
+                            
+
+Partitions: ['large-short', 'small-short', 'large-long', 'small-long', 'debug', 'interactive', 'ch4421', 'bigmem', 'vbigmem', 'gpu.L40S', 'gpu.A100', 'gpu.A30', 'bl4273']
+--------------------------------------------------------
+Cores dictionary: {'large-short': 2160, 'small-short': 31, 'large-long': 7674, 'small-long': 764, 'debug': 1, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 160, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs dictionary: {'large-short': 18, 'small-short': 4, 'large-long': 45, 'small-long': 50, 'debug': 1, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 1, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Wait times dictionary: {'large-short': 85, 'small-short': 8, 'large-long': 22, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 52, 'vbigmem': 0, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+Jobs pending dictionary: {'large-short': 29, 'small-short': 0, 'large-long': 1, 'small-long': 0, 'debug': 0, 'interactive': 0, 'ch4421': 0, 'bigmem': 0, 'vbigmem': 2, 'gpu.L40S': 0, 'gpu.A100': 0, 'gpu.A30': 0, 'bl4273': 0}
+--------------------------------------------------------
+Currently 10790 cores are in use out of 16544 cores in the cluster.
+Currently 65.22/% of the cluster is in use.
+--------------------------------------------------------
+There are 32 jobs pending in the queue.
+There are 119 jobs running in the queue.
