@@ -4,3 +4,8 @@ openpyxl
 pytest
 pymssql
 sphinx
+tqdm
+line_profiler
+pyfiglet
+ruff
+black
