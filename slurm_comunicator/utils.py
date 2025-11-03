@@ -4,8 +4,9 @@ import os
 
 
 def manage_partition_csv_file(partition_name: str, partition_data: dict) -> None:
-    file_path = os.path.join(os.path.expanduser("$HOME"), "logs", "partitions", partition_name)
-
+    #file_path = os.path.join(os.path.expanduser("~"), "logs", "partitions", partition_name)
+    file_path = os.path.join(os.path.expanduser("~"), ".hypatia_logs", "partitions", partition_name)
+    
     if not os.path.exists(file_path):
         os.makedirs(file_path)
 
@@ -13,7 +14,8 @@ def manage_partition_csv_file(partition_name: str, partition_data: dict) -> None
 
 
 def manage_csv_file(data: dict, file_name: str) -> None:
-    file_path = os.path.join(os.path.expanduser("~"), "logs", file_name.split('-')[0])
+    #file_path = os.path.join(os.path.expanduser("~"), "logs", "partitions", partition_name)
+    file_path = os.path.join(os.path.expanduser("~"), ".hypatia_logs", file_name.split('-')[0])
 
     if not os.path.exists(file_path):
         os.makedirs(file_path)
