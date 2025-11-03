@@ -32,19 +32,25 @@ class Queues:
         Returns:
             list: A list of [JobID, CPUs] for pending jobs.
         """
-        raw_job_data = subprocess.run(['squeue',
-                        f'--partition={self.partition_name}',
-                        '--states=PENDING',
-                        '--array',
-                        '--format=%i,%C'],
-                        stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+        raw_job_data = subprocess.run(
+            [
+                "squeue",
+                f"--partition={self.partition_name}",
+                "--states=PENDING",
+                "--array",
+                "--format=%i,%C",
+            ],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        ).stdout
 
         parsed_data = []
 
         for lines in raw_job_data.splitlines():
-            if 'JOBID' in lines:
+            if "JOBID" in lines:
                 continue
-            parsed_data.append(lines.split(','))
+            parsed_data.append(lines.split(","))
 
         return parsed_data
 
@@ -58,7 +64,7 @@ class Queues:
         Returns:
             int: Wait time in seconds, or 0 if time is not available.
         """
-        if None in time_data or 'None' in time_data or 'Unknown' in time_data:
+        if None in time_data or "None" in time_data or "Unknown" in time_data:
             return 0
         else:
             submit_time = datetime.strptime(time_data[1], "%Y-%m-%dT%H:%M:%S")
@@ -78,9 +84,9 @@ class Queues:
         """
         parsed_data = []
         for lines in raw_job_data.splitlines():
-            if 'JobID' in lines:
+            if "JobID" in lines:
                 continue
-            parsed_data.append(lines.split('|'))
+            parsed_data.append(lines.split("|"))
 
         return parsed_data
 
@@ -91,18 +97,24 @@ class Queues:
         Returns:
             dict:{user : n_jobs}
         """
-        raw_job_data = subprocess.run(['sacct',
-                                       '--format=User',
-                                       '--starttime=now-1day',
-                                       f'--partition={self.partition_name}',
-                                       '--parsable2',
-                                       '--allocations',
-                                       '--allusers'],
-                                      stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+        raw_job_data = subprocess.run(
+            [
+                "sacct",
+                "--format=User",
+                "--starttime=now-1day",
+                f"--partition={self.partition_name}",
+                "--parsable2",
+                "--allocations",
+                "--allusers",
+            ],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        ).stdout
         user_dict = {}
         for lines in raw_job_data.splitlines():
 
-            if lines == 'User':
+            if lines == "User":
                 continue
 
             else:
@@ -111,7 +123,7 @@ class Queues:
                 else:
                     user_dict[lines] = 1
         return user_dict
-    
+
     def get_average_wait_time(self) -> int:
         """
         Computes the average wait time for jobs submitted in the last 24 hours.
@@ -119,17 +131,23 @@ class Queues:
         Returns:
             int: Average wait time in minutes.
         """
-        raw_job_data = subprocess.run(['sacct',
-                                       '--format=JobID,Submit,Start',
-                                       '--starttime=now-1day',
-                                       f'--partition={self.partition_name}',
-                                       '--parsable2',
-                                       '--allocations',
-                                       '--allusers'],
-                                      stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+        raw_job_data = subprocess.run(
+            [
+                "sacct",
+                "--format=JobID,Submit,Start",
+                "--starttime=now-1day",
+                f"--partition={self.partition_name}",
+                "--parsable2",
+                "--allocations",
+                "--allusers",
+            ],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+        ).stdout
 
         parsed_data_list = self.parse_time_data(raw_job_data)
-    
+
         if len(parsed_data_list) < 1:
             return 0
 
@@ -144,7 +162,8 @@ class Queues:
         else:
             return 0
 
-if __name__ == '__main__':
-    partition = Queues('large-short')
-    print(f'Average wait time: {partition.get_average_wait_time()} minutes.')
+
+if __name__ == "__main__":
+    partition = Queues("large-short")
+    print(f"Average wait time: {partition.get_average_wait_time()} minutes.")
     print(partition.determine_users())
