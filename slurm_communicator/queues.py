@@ -1,6 +1,6 @@
 import subprocess
 from datetime import datetime
-from slurm_comunicator.utils import *
+from slurm_communicator.utils import *
 import numpy as np
 
 

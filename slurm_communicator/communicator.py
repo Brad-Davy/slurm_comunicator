@@ -1,10 +1,9 @@
 import subprocess
 from datetime import datetime, timedelta
 from tqdm import tqdm
-from slurm_comunicator.utils import *
-from slurm_comunicator.partitions import Partition
-from slurm_comunicator.historic_parition import HistoricPartition
-import line_profiler
+from slurm_communicator.utils import *
+from slurm_communicator.partitions import Partition
+from slurm_communicator.historic_parition import HistoricPartition
 import threading
 
 

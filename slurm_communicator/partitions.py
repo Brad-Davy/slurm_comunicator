@@ -1,6 +1,6 @@
 import subprocess
-from slurm_comunicator.node import Node
-from slurm_comunicator.queues import Queues
+from slurm_communicator.node import Node
+from slurm_communicator.queues import Queues
 import threading
 
 

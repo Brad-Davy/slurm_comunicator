@@ -1,5 +1,5 @@
-from slurm_comunicator.comunicator import SlurmComms
-from slurm_comunicator.utils import *
+from slurm_communicator.comunicator import SlurmComms
+from slurm_communicator.utils import *
 import numpy as np
 import shutil
 from datetime import date
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     terminal_height = shutil.get_terminal_size().lines
 
     print("-" * int(0.7 * terminal_width))
-    print(pyfiglet.figlet_format("SlurmComms", font="slant"))
+    print(pyfiglet.figlet_format("Dev Env", font="slant"))
     comms = SlurmComms(prometheus_comparison=False)
     comms.get_partitions()
     print(comms)
