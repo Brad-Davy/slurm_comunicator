@@ -1,11 +1,11 @@
 from local_directory_scanner import LocalDirectoryScanner
 from shared_directory_scanner import SharedDirectoryScanner
-
+from pathlib import Path
 
 class DirectoryReport:
 
-    def __init__(self, path: str, recursive: str):
-        self.path = path
+    def __init__(self, path: str, recursive: bool):
+        self.path = Path(path)
         self.recursive = recursive
 
         if self._is_shared():
@@ -22,7 +22,7 @@ class DirectoryReport:
 
     def _is_shared(self) -> bool:
         "Determine if directory is in local or network file share."
-        return True
+        return False
 
     def get_size(self):
         "Return the size of the directory."

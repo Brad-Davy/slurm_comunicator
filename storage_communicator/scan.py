@@ -1,17 +1,8 @@
 from directory_report import DirectoryReport
 import subprocess
 
-root_directory = "/home"
-recursive = False
+root_directory = "/opt"
+recursive = True
 
-paths = subprocess.run(
-    ["ls", root_directory],
-    stdout=subprocess.PIPE,
-    stderr=subprocess.PIPE,
-    text=True,
-).stdout.splitlines()
-
-for path in paths:
-    directory = DirectoryReport(path=path, recursive=recursive)
-    directory.get_size()
-    print(directory)
+directory = DirectoryReport(path=root_directory, recursive=recursive)
+print(directory.get_size())
